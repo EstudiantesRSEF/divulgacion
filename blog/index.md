@@ -1,7 +1,7 @@
 ---
 title: "El Blog del Grupo de Estudiantes de la RSEF"
 layout: null
-permalink: "/Divulgacion/blog/"
+permalink: "/blog/"
 ---
 <!-- <!DOCTYPE html> -->
 <html lang="es">
