@@ -9,6 +9,9 @@ permalink: "/blog/"
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
+    <link rel="icon" type="image/png" href="/divulgacion/img/logos/logo-fondo-cuadrado.png">
+    <link rel="shortcut icon" type="image/png" href="/divulgacion/img/logos/logo-fondo-cuadrado.png">
+    <link rel="apple-touch-icon" href="/divulgacion/img/logos/logo-fondo-cuadrado.png">
     {% include blog-styles.html %}
     {% include analytics.html %}
 </head>
