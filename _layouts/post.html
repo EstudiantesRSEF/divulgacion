@@ -6,6 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} | El Blog del GdeE</title>
+    <link rel="icon" type="image/png" href="/divulgacion/img/logos/logo-fondo-cuadrado.png">
+    <link rel="shortcut icon" type="image/png" href="/divulgacion/img/logos/logo-fondo-cuadrado.png">
+    <link rel="apple-touch-icon" href="/divulgacion/img/logos/logo-fondo-cuadrado.png">
     {% include blog-styles.html %}
     {% include analytics.html %}
 </head>
@@ -42,7 +45,7 @@
                 {% assign autor_nombre = autor_raw | strip %}
                 {% assign autor_info = site.data.autores[autor_nombre] %}
                 <div class="autor-persona">
-                    <img src="{{ autor_info.image | default: '/Divulgacion/avatar-default.svg' }}" alt="Foto de {{ autor_nombre }}" onerror="this.onerror=null;this.src='/Divulgacion/avatar-default.svg';">
+                    <img src="{{ autor_info.image | default: '/divulgacion/Divulgacion-cosas/avatar-default.svg' }}" alt="Foto de {{ autor_nombre }}" onerror="this.onerror=null;this.src='/Divulgacion/avatar-default.svg';">
                     <div>
                         <div class="nombre">{{ autor_nombre }}</div>
                         {% if autor_info.universidad %}<div class="universidad">{{ autor_info.universidad }}</div>{% endif %}
