@@ -7,8 +7,8 @@
         <ul>
             <li><a href="/divulgacion/">Divulgación</a></li>
             <li><a href="/divulgacion/blog/">Todo el Blog</a></li>
-            <li><a href="/divulgacion/blog-cosas/secciones/gdee-por-el-mundo/">GdeE por el mundo</a></li>
-            <li><a href="/divulgacion/blog-cosas/secciones/diario-de-un-friki/">Diario de un Friki</a></li>
+            <li><a href="/divulgacion/blog/secciones/gdee-por-el-mundo/">GdeE por el mundo</a></li>
+            <li><a href="/divulgacion/blog/secciones/diario-de-un-friki/">Diario de un Friki</a></li>
             <li class="dropdown">
                 <a href="javascript:void(0)" class="dropdown-toggle" onclick="toggleDropdown(event)">Más Secciones <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown-menu">
@@ -16,7 +16,7 @@
                         {% assign dd_slug = item[0] %}
                         {% assign dd_seccion = item[1] %}
                         {% unless dd_slug == "gdee-por-el-mundo" or dd_slug == "diario-de-un-friki" %}
-                            <li><a href="/divulgacion/blog-cosas/secciones/{{ dd_slug }}/">{{ dd_seccion.titulo }}</a></li>
+                            <li><a href="/divulgacion/blog/secciones/{{ dd_slug }}/">{{ dd_seccion.titulo }}</a></li>
                         {% endunless %}
                     {% endfor %}
                 </ul>
