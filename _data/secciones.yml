@@ -2,46 +2,46 @@ gdee-por-el-mundo:
   titulo: "GdeE por el mundo"
   categoria: "GdeE por el mundo"
   descripcion: "Estudiantes del GdeE cuentan su experiencia investigando, estudiando o haciendo estancias fuera de casa."
-  imagen: "/img/blog/secciones/gdee_por_el_mundo.jpg"
+  imagen: "/divulgacion/img/blog/secciones/gdee_por_el_mundo.jpg"
 
 diario-de-un-friki:
   titulo: "Diario de un Friki"
   categoria: "Diario de un Friki"
   descripcion: "La vida desde el punto de vista del personaje más friki que puedas imaginar; para aprender y reirnos de nosotros mismos."
-  imagen: "/img/blog/secciones/friki-portada.png"
+  imagen: "/divulgacion/img/blog/secciones/friki-portada.png"
 
 hall-of-fame:
   titulo: "Hall of Fame"
   categoria: "Hall of Fame"
   descripcion: "Reconocemos a los físicos y físicas que han marcado un antes y un después en la historia de la ciencia."
-  imagen: "/img/blog/secciones/hall-of-fame.JPG"
+  imagen: "/divulgacion/img/blog/secciones/hall-of-fame.JPG"
 
 concurso-relatos:
   titulo: "I Concurso de Relatos Divulgativos"
   categoria: "I Concurso de Relatos Divulgativos"
   descripcion: "Relatos breves donde ciencia y literatura se encuentran, escritos por estudiantes de física."
-  imagen: "/img/blog/secciones/concurso-relatos.png"
+  imagen: "/divulgacion/img/blog/secciones/concurso-relatos.png"
 
 entrevistas:
   titulo: "Entrevistas"
   categoria: "Entrevistas"
   descripcion: "Conversaciones con investigadores, divulgadores y profesionales de la física."
-  imagen: "/img/blog/secciones/entrevistas.jpg"
+  imagen: "/divulgacion/img/blog/secciones/entrevistas.jpg"
 
 eventos:
   titulo: "Eventos"
   categoria: "Eventos"
   descripcion: "Congresos, jornadas y actividades del Grupo de Estudiantes y de la comunidad de física."
-  imagen: "/img/blog/secciones/eventos.jpg"
+  imagen: "/divulgacion/img/blog/secciones/eventos.jpg"
 
 divulgacion:
   titulo: "Divulgación"
   categoria: "Divulgación"
   descripcion: "Artículos que explican conceptos de física de forma clara y cercana para todos los públicos."
-  imagen: "/img/blog/secciones/divulgacion.jpg"
+  imagen: "/divulgacion/img/blog/secciones/divulgacion.jpg"
 
 reflexiones:
   titulo: "Reflexiones"
   categoria: "Reflexiones"
   descripcion: "Opiniones y reflexiones libres de estudiantes sobre la física, la ciencia y la vida académica."
-  imagen: "/img/blog/secciones/reflexiones.jpg"
+  imagen: "/divulgacion/img/blog/secciones/reflexiones.jpg"

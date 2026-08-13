@@ -1,7 +1,7 @@
 # Site settings
 title: "Estudiantes RSEF"
 description: "Grupo de Estudiantes de la Real Sociedad Española de Física"
-banner: img/logos/gdee-rsef.png
+banner: /divulgacion/img/logos/logo-fondo-cuadrado.png
 url: "http://estudiantes.rsef.es" # the base hostname & protocol for your site
 destination: ../site/
 locale: "es"
@@ -9,7 +9,7 @@ locale: "es"
 # Build settings
 markdown: kramdown
 future: true
-permalink: /blog/:year/:month/:day/:title/
+permalink: /divulgacion/blog/:year/:month/:day/:title/
 
 #facebook
 fb_admins:
