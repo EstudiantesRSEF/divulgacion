@@ -42,9 +42,9 @@ permalink: /concepto/
         ul { list-style: none; }
 
         header {
-            position: fixed;
+            position: sticky;
             top: 0; width: 100%;
-            background-color: rgba(22, 32, 63, 0.95);
+            background-color: rgba(22, 32, 63, 0.97);
             color: var(--blanco);
             padding: 0.9rem 5%;
             display: flex;
@@ -52,11 +52,13 @@ permalink: /concepto/
             align-items: center;
             z-index: 1000;
             box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+            flex-wrap: wrap;
+            gap: 15px;
         }
-        .logo { font-size: 1.4rem; font-weight: 800; color: var(--verde); display: flex; align-items: center; gap: 15px; }
-        .logo-img { width: 68px; height: 68px; border-radius: 50%; object-fit: contain; background-color: var(--blanco); padding: 2px; border: 2px solid var(--verde); }
-        nav ul { display: flex; gap: 25px; }
-        nav a { transition: color 0.3s; font-size: 0.95rem; font-weight: 600; }
+        .logo { font-size: 1.15rem; font-weight: 800; color: var(--blanco); display: flex; align-items: center; gap: 15px; }
+        .logo-img { width: 56px; height: 56px; border-radius: 50%; object-fit: contain; background-color: var(--blanco); padding: 2px; border: 2px solid var(--verde); flex-shrink: 0; }
+        nav ul { display: flex; gap: 22px; align-items: center; flex-wrap: wrap; }
+        nav a { transition: color 0.3s; font-size: 0.92rem; font-weight: 600; }
         nav a:hover { color: var(--verde); }
 
         .concepto-hero {
@@ -115,10 +117,10 @@ permalink: /concepto/
 <body>
 
     <header>
-        <div class="logo">
+        <a href="https://estudiantes.rsef.es/" class="logo">
             <img src="/divulgacion/img/logos/gdee-rsef-logo-cuadrado.png" alt="Logo GdeE RSEF" class="logo-img">
             <span>Grupo de Estudiantes RSEF</span>
-        </div>
+        </a>
         <nav>
             <ul>
                 <li><a href="/divulgacion">Home</a></li>
