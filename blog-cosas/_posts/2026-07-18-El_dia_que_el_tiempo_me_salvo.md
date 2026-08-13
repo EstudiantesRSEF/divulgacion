@@ -4,7 +4,7 @@ categories:
    - blog
    - I Concurso Relatos Divulgativos
 title:  "ICRD26: El día que el tiempo me salvó"
-cover: "/Divulgacion/ConcursoRelatos/portada.png"
+cover: ""divulgacion/Divulgacion-cosas/ConcursoRelatos/portada.png"
 date: 2026-07-18 11:00
 author: Judit Álvarez Fernández
 redirect-from:

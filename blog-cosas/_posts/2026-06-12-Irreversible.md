@@ -4,7 +4,7 @@ categories:
    - blog
    - I Concurso Relatos Divulgativos
 title:  "ICRD26: Irreversible"
-cover: "/Divulgacion/ConcursoRelatos/portada.png"
+cover: "/divulgacion/Divulgacion-cosas/ConcursoRelatos/portada.png"
 date: 2026-06-12 11:00
 author: David Iván Castillo Carro
 redirect-from:

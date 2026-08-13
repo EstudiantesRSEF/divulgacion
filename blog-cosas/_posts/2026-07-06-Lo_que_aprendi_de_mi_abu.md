@@ -4,7 +4,7 @@ categories:
    - blog
    - I Concurso Relatos Divulgativos
 title:  "ICRD26: Lo que aprendí de mi abu"
-cover: "/Divulgacion/ConcursoRelatos/portada.png"
+cover: "/divulgacion/Divulgacion-cosas/ConcursoRelatos/portada.png"
 date: 2026-07-06 11:00
 author: Lucia Matey Font
 redirect-from:

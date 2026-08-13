@@ -4,7 +4,7 @@ categories:
    - blog 
    - Entrevistas
 title:  "Entrevista a Juan Calderón Bustillo – Investigador en Ondas Gravitacionales. Parte I"
-cover: "/img/blog/2026-03-07-Entrevista-Juan/los_tres.jpeg"
+cover: "/divulgacion/img/blog/2026-03-07-Entrevista-Juan/los_tres.jpeg"
 date: 2026-03-07 11:00
 author: Álvaro Jacobo Iturbe Jabaloyes & Enrique Rodríguez Ramos
 redirect-from:

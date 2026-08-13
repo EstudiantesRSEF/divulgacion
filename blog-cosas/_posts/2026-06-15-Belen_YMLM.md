@@ -4,7 +4,7 @@ categories:
    - blog
    - GdeE por el mundo
 title:  "GdeE por el mundo: Belén en el 2026 EPS YM Leadership Meeting en Vilna"
-cover: "/img/blog/2026-06-15-Belen_YMLM/Foto3_vert.jpg"
+cover: "/divulgacion/img/blog/2026-06-15-Belen_YMLM/Foto3_vert.jpg"
 date: 2026-06-17 11:00
 author: Belén Carreres Chulilla
 redirect-from:

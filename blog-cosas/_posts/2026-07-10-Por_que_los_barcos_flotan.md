@@ -4,7 +4,7 @@ categories:
    - blog
    - I Concurso Relatos Divulgativos
 title:  "ICRD26: ¿Por qué los barcos flotan?"
-cover: "/Divulgacion/ConcursoRelatos/portada.png"
+cover: "/divulgacion/Divulgacion-cosas/ConcursoRelatos/portada.png"
 date: 2026-07-10 11:00
 author: Marta Torregrosa Montesinos
 redirect-from:

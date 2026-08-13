@@ -4,7 +4,7 @@ categories:
    - blog
    - I Concurso Relatos Divulgativos
 title:  "ICRD26: El Cielo y yo"
-cover: "/Divulgacion/ConcursoRelatos/portada.png"
+cover: "/divulgacion/Divulgacion-cosas/ConcursoRelatos/portada.png"
 date: 2026-07-22 11:00
 author: Antonio Bernabe Marin Carballo
 redirect-from:

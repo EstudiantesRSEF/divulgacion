@@ -4,7 +4,7 @@ categories:
    - blog
    - I Concurso Relatos Divulgativos
 title:  "ICRD26: El Demonio de Maxwell - Capítulo 1"
-cover: "/Divulgacion/ConcursoRelatos/portada.png"
+cover: "/divulgacion/Divulgacion-cosas/ConcursoRelatos/portada.png"
 date: 2026-07-14 11:00
 author: Eric Jiménez Zurera
 redirect-from:

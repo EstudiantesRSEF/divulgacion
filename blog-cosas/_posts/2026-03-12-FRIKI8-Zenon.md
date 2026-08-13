@@ -5,7 +5,7 @@ categories:
    - Divulgación 
    - "Diario de un Friki"
 title:  "Diario de un Friki VIII: Más vueltas que un tiovivo - La paradoja de Zenón Cuántica"
-cover: "/img/blog/2026-03-12-FRIKI8-Zenon/friki_rallado.png"
+cover: "/divulgacion/img/blog/2026-03-12-FRIKI8-Zenon/friki_rallado.png"
 date: 2026-03-12 11:00
 author: Enrique Rodríguez Ramos
 redirect-from:
