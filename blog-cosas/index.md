@@ -48,7 +48,7 @@ permalink: "/blog/"
             {% assign categories = site.categories | sort %}
             {% for category in categories %}
                 {% assign cat = category | first %}
-                {% if cat == 'blog' %}
+                {% if cat == 'blog' or cat == 'blog-cosas'%}
                 {% else %}
                     <button class="chip_button" id="{{ cat }}" onclick="filterUsingCategory(this.id)">{{ cat }}</button>
                 {% endif %}
@@ -75,7 +75,7 @@ permalink: "/blog/"
             {% for autor in site.data.autores_ranking limit: 5 %}
                 {% assign autor_info = site.data.autores[autor.nombre] %}
                 <div class="autor-destacado">
-                    <img src="{{ autor_info.image | default: '/Divulgacion/avatar-default.svg' }}" alt="Foto de {{ autor.nombre }}" onerror="this.onerror=null;this.src='/Divulgacion/avatar-default.svg';">
+                    <img src="{{ autor_info.image | default: '/divulgacion/Divulgacion-cosas/avatar-default.svg' }}" alt="Foto de {{ autor.nombre }}" onerror="this.onerror=null;this.src='/divulgacion/Divulgacion-cosas/avatar-default.svg';">
                     <div>
                         <div class="nombre">{{ autor.nombre }}</div>
                         <div class="conteo">{{ autor.numero }} entrada{% unless autor.numero == 1 %}s{% endunless %}</div>
