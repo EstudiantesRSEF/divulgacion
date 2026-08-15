@@ -10,7 +10,7 @@
             {% if card_post.author %}<span class="chip">{{ card_post.author }}</span>{% endif %}
             {% if card_post.categories %}
                 {% for category in card_post.categories %}
-                    {% unless category == 'blog' %}<span class="chip">{{ category }}</span>{% endunless %}
+                    {% unless category == 'blog' or category == 'blog-cosas' %}<span class="chip">{{ category }}</span>{% endunless %}
                 {% endfor %}
             {% endif %}
         </div>
