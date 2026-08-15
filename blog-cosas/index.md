@@ -24,7 +24,7 @@ permalink: "/blog/"
     {% for item in site.data.secciones %}
         {% assign car_slug = item[0] %}
         {% assign car_seccion = item[1] %}
-        <a href="{{ site.baseurl }}/secciones/{{ car_slug }}/" class="seccion-slide" style="background-image: url('{{ car_seccion.imagen | relative_url }}');">
+        <a href="{{ site.baseurl }}/blog/secciones/{{ car_slug }}/" class="seccion-slide" style="background-image: url('{{ car_seccion.imagen | relative_url }}');">
             <div class="seccion-slide-overlay"></div>
             <div class="seccion-slide-content">
                 <h2>{{ car_seccion.titulo }}</h2>
