@@ -491,7 +491,7 @@ permalink: /
 
                 {% for post in site.posts limit:5 %}
                 {% assign autor_info = site.data.autores[post.author] %}
-                <a href="{{ post.url }}" class="blog-card">
+                <a href="/divulgacion/{{ post.url }}" class="blog-card">
                     <div class="blog-card-header">
                         <img src="{{ autor_info.image | default: '/divulgacion/Divulgacion-cosas/avatar-default.svg' }}" alt="Foto de {{ post.author }}" class="blog-author-img" onerror="this.onerror=null;this.src='/Divulgacion/avatar-default.svg';">
                         <div class="blog-meta">{{ post.date | date: "%-d %B %Y" }}<br><strong>{{ post.author }}</strong></div>
