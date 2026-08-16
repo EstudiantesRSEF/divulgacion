@@ -8,7 +8,7 @@ Se ejecuta automáticamente cada noche mediante
 a mano en local:
 
     pip install google-analytics-data pyyaml
-    export GA_PROPERTY_ID="properties/123456789"
+    export GA_PROPERTY_ID="properties/550076310"
     export GOOGLE_APPLICATION_CREDENTIALS="ga-credentials.json"
     python scripts/actualizar_visitas.py
 """
