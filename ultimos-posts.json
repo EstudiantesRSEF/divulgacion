@@ -1,0 +1,22 @@
+---
+layout: null
+---
+[
+  {% assign count = 0 %}
+  {% for post in site.categories.blog %}
+    {% if post.hidden != true %}
+      {% if count < 3 %}
+        {% if count > 0 %},{% endif %}
+        {
+          "title": {{ post.title | jsonify }},
+          "url": "/divulgacion{{ post.url }}",
+          "date": "{{ post.date | date: '%-d %b %Y' }}",
+          "author": {{ post.author | jsonify }},
+          "categories": {{ post.categories | jsonify }},
+          "excerpt": {{ post.excerpt | strip_html | truncatewords: 40 | jsonify }}
+        }
+        {% assign count = count | plus: 1 %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+]
