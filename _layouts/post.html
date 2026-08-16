@@ -66,13 +66,14 @@
             {% endfor %}
         </div>
         {% if page.date %}
-            <div class="fecha">{{ page.date | date: "%-d %B %Y" }} · {{ tiempo_lectura }} min de lectura</div>
+            <div class="fecha"><i class="fas fa-calendar-days"></i> {{ page.date | date: "%-d %B %Y" }}</div>
         {% endif %}
     </div>
 
     <div class="post-stats">
         <span class="post-stat"><i class="fas fa-star"></i> <span id="ratingAverage">Cargando valoración...</span></span>
         <span class="post-stat"><i class="fas fa-eye"></i> {{ page.views | default: 0 }} visita{% unless page.views == 1 %}s{% endunless %}</span>
+        <span class="post-stat"><i class="fas fa-clock"></i> {{ tiempo_lectura }} min</span>
     </div>
 
     {% if page.excerpt %}

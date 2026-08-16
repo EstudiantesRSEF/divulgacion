@@ -6,7 +6,7 @@
     <div class="body">
         <h3>{{ card_post.title }}</h3>
         <div class="meta">
-            {% if card_post.date %}<span class="chip">{{ card_post.date | date: "%-d %b %Y" }}</span>{% endif %}
+            {% if card_post.date %}<span class="chip"><i class="fas fa-calendar-days"></i> {{ card_post.date | date: "%-d %b %Y" }}</span>{% endif %}
             {% if card_post.author %}<span class="chip">{{ card_post.author }}</span>{% endif %}
             {% if card_post.categories %}
                 {% for category in card_post.categories %}
