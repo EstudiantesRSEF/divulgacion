@@ -6,7 +6,7 @@ categories:
 title:  "Entrevista a Juan Calderón Bustillo - Investigador en ondas gravitacionales. Parte II"
 cover: "/divulgacion/img/blog/2026-03-07-Entrevista-Juan/los_tres.jpeg"
 date: 2026-03-21 11:00
-author: Álvaro Iturbe Jabaloyes & Enrique Rodríguez Ramos
+author: Álvaro Jacobo Iturbe Jabaloyes & Enrique Rodríguez Ramos
 redirect-from:
 excerpt: "Agujeros negros saliendo disparados tras colisiones y su impronta en las ondas gravitacionales; ¿existen otros mounstruos gigantes que no son agujeros negros? ¿Los podríamos ver? Un experto en estas cuestiones nos lo cuenta."
 ---
