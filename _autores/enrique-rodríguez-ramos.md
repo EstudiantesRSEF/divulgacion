@@ -1,7 +1,7 @@
 ---
 layout: autor
 title: "Enrique Rodríguez Ramos"
-slug: enrique-rodriguez-ramos
+slug: enrique-rodríguez-ramos
 image: /divulgacion/Divulgacion-cosas/imagenes/autores/kike.jpeg
 universidad: "Universidad de Granada"
 origen: "San Fernando, Cádiz"
