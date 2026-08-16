@@ -1,0 +1,47 @@
+{% comment %}
+  Calcula el ranking de autores por número de entradas, usando solo Liquid,
+  para que funcione también en el modo "safe" de GitHub Pages (donde los
+  plugins Ruby personalizados de _plugins/ se ignoran).
+  Deja disponible la variable `ranking_final`: un array de strings
+  "NNN||Nombre del autor" ordenado de mayor a menor número de entradas.
+{% endcomment %}
+
+{% assign posts_blog = site.posts | where_exp: "p", "p.categories contains 'blog'" %}
+{% assign posts_blog = posts_blog | where_exp: "p", "p.hidden != true" %}
+
+{% assign autores_flat = "" | split: "," %}
+{% for post in posts_blog %}
+  {% assign autor_raw = post.author | replace: "&", "," %}
+  {% assign autores_post = autor_raw | split: "," %}
+  {% for autor in autores_post %}
+    {% assign autor_limpio = autor | strip %}
+    {% unless autor_limpio == "" %}
+      {% assign autores_flat = autores_flat | push: autor_limpio %}
+    {% endunless %}
+  {% endfor %}
+{% endfor %}
+
+{% assign autores_unicos = autores_flat | uniq %}
+
+{% assign ranking_ordenable = "" | split: "," %}
+{% for nombre in autores_unicos %}
+  {% assign numero = 0 %}
+  {% for a in autores_flat %}
+    {% if a == nombre %}
+      {% assign numero = numero | plus: 1 %}
+    {% endif %}
+  {% endfor %}
+
+  {% assign numero_str = numero | append: "" %}
+  {% assign padded = numero_str %}
+  {% if numero < 10 %}
+    {% assign padded = "00" | append: numero_str %}
+  {% elsif numero < 100 %}
+    {% assign padded = "0" | append: numero_str %}
+  {% endif %}
+
+  {% assign entrada = padded | append: "||" | append: nombre %}
+  {% assign ranking_ordenable = ranking_ordenable | push: entrada %}
+{% endfor %}
+
+{% assign ranking_final = ranking_ordenable | sort | reverse %}

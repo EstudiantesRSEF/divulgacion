@@ -42,13 +42,17 @@
     <aside class="blog-sidebar">
         <div class="sidebar-widget">
             <h3>Autores destacados</h3>
-            {% for autor in site.data.autores_ranking limit: 2 %}
-                {% assign autor_info = site.data.autores[autor.nombre] %}
+            {% include autores-destacados.html %}
+            {% for entrada in ranking_final limit: 2 %}
+                {% assign partes = entrada | split: "||" %}
+                {% assign autor_numero = partes[0] | plus: 0 %}
+                {% assign autor_nombre = partes[1] %}
+                {% assign autor_info = site.data.autores[autor_nombre] %}
                 <div class="autor-destacado">
-                    <img src="{{ autor_info.image | default: '/Divulgacion/avatar-default.svg' }}" alt="Foto de {{ autor.nombre }}" onerror="this.onerror=null;this.src='/Divulgacion/avatar-default.svg';">
+                    <img src="{{ autor_info.image | default: '/Divulgacion/avatar-default.svg' }}" alt="Foto de {{ autor_nombre }}" onerror="this.onerror=null;this.src='/Divulgacion/avatar-default.svg';">
                     <div>
-                        <div class="nombre">{{ autor.nombre }}</div>
-                        <div class="conteo">{{ autor.numero }} entrada{% unless autor.numero == 1 %}s{% endunless %}</div>
+                        <div class="nombre">{{ autor_nombre }}</div>
+                        <div class="conteo">{{ autor_numero }} entrada{% unless autor_numero == 1 %}s{% endunless %}</div>
                     </div>
                 </div>
             {% endfor %}
