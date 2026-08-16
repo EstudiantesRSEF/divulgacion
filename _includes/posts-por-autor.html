@@ -1,0 +1,27 @@
+---
+
+---
+
+{% comment %}
+  Uso: {% include posts-por-autor.html autor=page.title %}
+  Deja disponible `posts_autor`: array de posts donde participa ese autor.
+{% endcomment %}
+{% assign nombre_buscado = include.autor %}
+{% assign posts_blog = site.posts | where_exp: "p", "p.categories contains 'blog'" %}
+{% assign posts_blog = posts_blog | where_exp: "p", "p.hidden != true" %}
+
+{% assign posts_autor = "" | split: "," %}
+{% for post in posts_blog %}
+  {% assign autor_raw = post.author | replace: "&", "," | replace: " y ", "," %}
+  {% assign autores_post = autor_raw | split: "," %}
+  {% assign encontrado = false %}
+  {% for a in autores_post %}
+    {% assign a_limpio = a | strip %}
+    {% if a_limpio == nombre_buscado %}
+      {% assign encontrado = true %}
+    {% endif %}
+  {% endfor %}
+  {% if encontrado %}
+    {% assign posts_autor = posts_autor | push: post %}
+  {% endif %}
+{% endfor %}

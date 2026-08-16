@@ -260,4 +260,34 @@
         .autor-box { flex-wrap: wrap; }
         .autor-box .fecha { margin-left: 0; }
     }
+
+    .ver-todos-autores {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 700;
+    color: var(--verde-oscuro);
+    }
+    .ver-todos-autores:hover { color: var(--verde-hover); }
+
+    .autores-lista-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 20px;
+    }
+    .autores-lista-grid .autor-destacado {
+        background: var(--blanco);
+        padding: 18px;
+        border-radius: 14px;
+        box-shadow: 0 6px 20px rgba(22,32,63,0.08);
+        margin-bottom: 0;
+    }
+
+    .autor-perfil-container { max-width: 820px; margin: 0 auto; padding: 55px 6% 90px; }
+    .autor-perfil-cabecera { display: flex; align-items: center; gap: 24px; margin-bottom: 30px; flex-wrap: wrap; }
+    .autor-perfil-foto { width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 4px solid var(--verde-pastel); }
+    .autor-perfil-info h1 { color: var(--azul-marino); font-size: 2rem; margin-bottom: 6px; }
+    .autor-perfil-universidad { color: #777; font-size: 0.95rem; margin-bottom: 8px; }
+    .autor-perfil-dato { font-size: 0.95rem; color: #555; margin-bottom: 4px; }
+    .autor-perfil-descripcion { background: var(--azul-pastel); border-radius: 10px; padding: 20px 24px; margin-bottom: 40px; color: #333; }
 </style>

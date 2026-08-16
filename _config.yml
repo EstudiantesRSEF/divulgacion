@@ -23,6 +23,9 @@ collections:
   persons:
     output: true
     permalink: /:categories/:title/
+  autores:
+    output: true
+    permalink: /autores/:slug/
 
 excerpt_separator: "\n\n"
 

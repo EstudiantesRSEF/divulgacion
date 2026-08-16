@@ -73,21 +73,23 @@ permalink: "/blog/"
     <aside class="blog-sidebar">
 
         <div class="sidebar-widget">
-            <h3>Autores destacados</h3>
             {% include autores-destacados.html %}
+            <h3>Autores destacados</h3>
             {% for entrada in ranking_final limit: 5 %}
                 {% assign partes = entrada | split: "||" %}
                 {% assign autor_numero = partes[0] | plus: 0 %}
                 {% assign autor_nombre = partes[1] %}
                 {% assign autor_info = site.data.autores[autor_nombre] %}
-                <div class="autor-destacado">
+                {% assign autor_slug = autor_nombre | slugify %}
+                <a href="{{ site.baseurl }}/autores/{{ autor_slug }}/" class="autor-destacado">
                     <img src="{{ autor_info.image | default: '/divulgacion/Divulgacion-cosas/avatar-default.svg' }}" alt="Foto de {{ autor_nombre }}" onerror="this.onerror=null;this.src='/divulgacion/Divulgacion-cosas/avatar-default.svg';">
                     <div>
                         <div class="nombre">{{ autor_nombre }}</div>
                         <div class="conteo">{{ autor_numero }} entrada{% unless autor_numero == 1 %}s{% endunless %}</div>
                     </div>
-                </div>
+                </a>
             {% endfor %}
+            <a href="{{ site.baseurl }}/blog/autores/" class="ver-todos-autores">Ver todos →</a>
         </div>
 
         <div class="sidebar-widget">

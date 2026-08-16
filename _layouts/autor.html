@@ -1,0 +1,49 @@
+---
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | El Blog del GdeE</title>
+    <link rel="icon" type="image/png" href="/divulgacion/img/logos/logo-fondo-cuadrado.png">
+    {% include blog-styles.html %}
+    {% include analytics.html %}
+</head>
+<body>
+
+{% include blog-header.html %}
+
+<div class="autor-perfil-container">
+    <div class="autor-perfil-cabecera">
+        <img src="{{ page.image | default: '/divulgacion/Divulgacion-cosas/avatar-default.svg' }}" alt="Foto de {{ page.title }}" class="autor-perfil-foto" onerror="this.onerror=null;this.src='/divulgacion/Divulgacion-cosas/avatar-default.svg';">
+        <div class="autor-perfil-info">
+            <h1>{{ page.title }}</h1>
+            {% if page.universidad %}<p class="autor-perfil-universidad">{{ page.universidad }}</p>{% endif %}
+            <p class="autor-perfil-dato">📍 {{ page.origen | default: "Origen no especificado" }}</p>
+            <p class="autor-perfil-dato">🎂 {{ page.cumpleanos | default: "Cumpleaños no especificado" }}</p>
+        </div>
+    </div>
+
+    {% if content and content != "" %}
+        <div class="autor-perfil-descripcion">
+            {{ content }}
+        </div>
+    {% endif %}
+
+    <h2 class="blog-heading">Entradas publicadas</h2>
+    {% include posts-por-autor.html autor=page.title %}
+    {% if posts_autor.size > 0 %}
+        <div class="post-card-grid">
+            {% for post in posts_autor %}
+                {% include blog-post-card.html post=post %}
+            {% endfor %}
+        </div>
+    {% else %}
+        <p style="color:#777;">Todavía no hay entradas registradas para este autor.</p>
+    {% endif %}
+</div>
+
+{% include blog-footer.html %}
+</body>
+</html>
