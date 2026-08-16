@@ -1,7 +1,7 @@
 ---
 layout: autor
-title: "Álvaro Jacobo Iturbe Javaloyes"
-slug: álvaro-jacobo-iturbe-javaloyes
+title: "Álvaro Jacobo Iturbe Jabaloyes"
+slug: álvaro-jacobo-iturbe-jabaloyes
 image: /divulgacion/Divulgacion-cosas/avatar-default.svg
 universidad: "Universidad de Santiago de Compostela"
 origen: "Marbella, Málaga"
