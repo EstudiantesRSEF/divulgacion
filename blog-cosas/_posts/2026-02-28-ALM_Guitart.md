@@ -1,6 +1,7 @@
 ---
 layout: post
 categories: 
+   - blog
    - GdeE por el mundo
 title:  "GdeE por el mundo: Sonsoles y Àlex en el ALM 2026 en Washington D.C."
 cover: "/img/blog/2026-02-28-ALM_Guitart/sonsoles_leonor_alex.jpeg"

@@ -2,7 +2,7 @@
 layout: post
 categories: 
    - blog 
-   - "GdeE por el mundo"
+   - GdeE por el mundo
    - Eventos
 title:  "GdeE por el mundo: Y nos fuimos a Bari - El primer SIPE, por Àlex Guitart"
 date: 2025-11-16 11:00
