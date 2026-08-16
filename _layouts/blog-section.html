@@ -7,6 +7,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ seccion_actual.titulo }} | El Blog del GdeE</title>
+    <link rel="icon" type="image/png" href="/divulgacion/img/logos/logo-fondo-cuadrado.png">
+    <link rel="shortcut icon" type="image/png" href="/divulgacion/img/logos/logo-fondo-cuadrado.png">
+    <link rel="apple-touch-icon" href="/divulgacion/img/logos/logo-fondo-cuadrado.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     {% include blog-styles.html %}
     {% include analytics.html %}
 </head>
@@ -49,7 +54,7 @@
                 {% assign autor_nombre = partes[1] %}
                 {% assign autor_info = site.data.autores[autor_nombre] %}
                 <div class="autor-destacado">
-                    <img src="{{ autor_info.image | default: '/Divulgacion/avatar-default.svg' }}" alt="Foto de {{ autor_nombre }}" onerror="this.onerror=null;this.src='/Divulgacion/avatar-default.svg';">
+                    <img src="{{ autor_info.image | default: '/divulgacion/Divulgacion-cosas/avatar-default.svg' }}" alt="Foto de {{ autor_nombre }}" onerror="this.onerror=null;this.src='/Divulgacion/avatar-default.svg';">
                     <div>
                         <div class="nombre">{{ autor_nombre }}</div>
                         <div class="conteo">{{ autor_numero }} entrada{% unless autor_numero == 1 %}s{% endunless %}</div>
