@@ -1,6 +1,6 @@
 ---
 layout: autor
-title: "Victor Zamora Castro"
+title: "Víctor Zamora Castro"
 slug: víctor-zamora-castro
 image: /divulgacion/Divulgacion-cosas/avatar-default.svg
 universidad: "--"
