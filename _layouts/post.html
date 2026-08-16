@@ -44,12 +44,24 @@
             {% for autor_raw in autores_lista %}
                 {% assign autor_nombre = autor_raw | strip %}
                 {% assign autor_info = site.data.autores[autor_nombre] %}
+                {% assign autor_doc = nil %}
+                {% for doc in site.autores %}
+                    {% if doc.title == autor_nombre %}
+                        {% assign autor_doc = doc %}
+                    {% endif %}
+                {% endfor %}
                 <div class="autor-persona">
+                    {% if autor_doc %}
+                        <a href="{{ autor_doc.url | prepend: site.baseurl }}" class="autor-persona-link">
+                    {% endif %}
                     <img src="{{ autor_info.image | default: '/divulgacion/Divulgacion-cosas/avatar-default.svg' }}" alt="Foto de {{ autor_nombre }}" onerror="this.onerror=null;this.src='/Divulgacion/avatar-default.svg';">
                     <div>
                         <div class="nombre">{{ autor_nombre }}</div>
                         {% if autor_info.universidad %}<div class="universidad">{{ autor_info.universidad }}</div>{% endif %}
                     </div>
+                    {% if autor_doc %}
+                        </a>
+                    {% endif %}
                 </div>
             {% endfor %}
         </div>
