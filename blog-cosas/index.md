@@ -20,19 +20,21 @@ permalink: "/blog/"
 {% include blog-header.html %}
 
 <!-- CARRUSEL DE SECCIONES -->
-<div class="secciones-carousel" id="seccionesCarousel">
-    {% for item in site.data.secciones %}
-        {% assign car_slug = item[0] %}
-        {% assign car_seccion = item[1] %}
-        <a href="{{ site.baseurl }}/blog/secciones/{{ car_slug }}/" class="seccion-slide" style="background-image: url('{{ car_seccion.imagen }}');">
-            <div class="seccion-slide-overlay"></div>
-            <div class="seccion-slide-content">
-                <h2>{{ car_seccion.titulo }}</h2>
-                <p>{{ car_seccion.descripcion }}</p>
-                <span class="btn btn-small">Ver sección</span>
-            </div>
-        </a>
-    {% endfor %}
+<div class="secciones-carousel-wrapper">
+    <div class="secciones-carousel" id="seccionesCarousel">
+        {% for item in site.data.secciones %}
+            {% assign car_slug = item[0] %}
+            {% assign car_seccion = item[1] %}
+            <a href="{{ site.baseurl }}/blog/secciones/{{ car_slug }}/" class="seccion-slide" style="background-image: url('{{ car_seccion.imagen }}');">
+                <div class="seccion-slide-overlay"></div>
+                <div class="seccion-slide-content">
+                    <h2>{{ car_seccion.titulo }}</h2>
+                    <p>{{ car_seccion.descripcion }}</p>
+                    <span class="btn btn-small">Ver sección</span>
+                </div>
+            </a>
+        {% endfor %}
+    </div>
     <button class="carousel-arrow prev" onclick="moverSecciones(-1)"><i class="fas fa-chevron-left"></i></button>
     <button class="carousel-arrow next" onclick="moverSecciones(1)"><i class="fas fa-chevron-right"></i></button>
     <div class="carousel-dots" id="carouselDots"></div>

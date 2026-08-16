@@ -91,11 +91,14 @@
     .dropdown-menu li:not(:last-child) a { border-bottom: 1px solid #eee; }
 
     /* ===== CARRUSEL DE SECCIONES (home del blog) ===== */
-    .secciones-carousel {
+    .secciones-carousel-wrapper {
         position: relative;
         height: 62vh;
         min-height: 380px;
         overflow: hidden;
+    }
+    .secciones-carousel {
+        height: 100%;
         scroll-snap-type: x mandatory;
         display: flex;
         overflow-x: auto;
