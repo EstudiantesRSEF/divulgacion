@@ -26,6 +26,13 @@ from google.analytics.data_v1beta.types import (
 PROPERTY_ID = os.environ["GA_PROPERTY_ID"]          # p. ej. "properties/123456789"
 SALIDA = os.path.join(os.path.dirname(__file__), "..", "_data", "visitas.yml")
 
+# Prefijo bajo el que se sirve el sitio (p. ej. https://estudiantes.rsef.es/divulgacion/...).
+# GA4 registra la ruta completa tal como la ve el navegador, incluyendo este prefijo,
+# pero Jekyll calcula post.url SIN él (no hay "baseurl" configurado en _config.yml).
+# Por eso lo recortamos aquí, para que las claves de visitas.yml coincidan exactamente
+# con post.url (ver _plugins/visitas.rb).
+PREFIJO_SITIO = "/divulgacion"
+
 
 def obtener_visitas():
     client = BetaAnalyticsDataClient()  # usa GOOGLE_APPLICATION_CREDENTIALS
@@ -43,6 +50,15 @@ def obtener_visitas():
     for row in response.rows:
         ruta = row.dimension_values[0].value
         vistas = int(row.metric_values[0].value)
+
+        # Quitamos el prefijo del sitio si está presente
+        if ruta.startswith(PREFIJO_SITIO):
+            ruta = ruta[len(PREFIJO_SITIO):]
+
+        # Normalizamos posibles dobles barras o falta de barra inicial
+        if not ruta.startswith("/"):
+            ruta = "/" + ruta
+
         # Solo nos interesan las entradas del blog
         if ruta.startswith("/blog/"):
             visitas[ruta] = visitas.get(ruta, 0) + vistas

@@ -1,0 +1,19 @@
+source "https://rubygems.org"
+
+gem "jekyll", "~> 4.3"
+
+group :jekyll_plugins do
+  gem "jekyll-redirect-from"
+  gem "jekyll-sitemap"
+end
+
+# Necesario en Ruby 3.x porque estas librerías dejaron de venir
+# incluidas por defecto en la stdlib pero Jekyll las sigue usando.
+gem "webrick"
+gem "csv"
+gem "logger"
+gem "base64"
+gem "bigdecimal"
+
+# Necesario para actions/deploy-pages y el resto del pipeline de Pages
+gem "jekyll-github-metadata", group: :jekyll_plugins
