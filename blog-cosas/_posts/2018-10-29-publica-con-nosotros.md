@@ -3,7 +3,7 @@ layout: post
 categories: blog
 title:  "¿Quieres publicar con nosotros?"
 date:   2018-10-29 12:00
-author: Equipo Estudiantes RSEF
+author: Equipo del Grupo de Estudiantes de la RSEF
 redirect_from:
 ---
 
