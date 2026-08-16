@@ -43,7 +43,7 @@
         <div class="sidebar-widget">
             <h3>Autores destacados</h3>
             {% include autores-destacados.html %}
-            {% for entrada in ranking_final limit: 2 %}
+            {% for entrada in ranking_final limit: 5 %}
                 {% assign partes = entrada | split: "||" %}
                 {% assign autor_numero = partes[0] | plus: 0 %}
                 {% assign autor_nombre = partes[1] %}
@@ -61,7 +61,7 @@
         <div class="sidebar-widget">
             <h3>Entradas más visitadas</h3>
             {% assign posts_por_visitas = site.posts | where_exp: "p", "p.categories contains 'blog'" | sort: "views" | reverse %}
-            {% for post in posts_por_visitas limit: 5 %}
+            {% for post in posts_por_visitas limit: 10 %}
                 <a href="{{ post.url | prepend: site.baseurl }}" class="entrada-destacada">
                     <span class="num">{{ forloop.index }}</span>
                     <div>

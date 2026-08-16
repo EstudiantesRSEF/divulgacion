@@ -11,7 +11,7 @@
 
 {% assign autores_flat = "" | split: "," %}
 {% for post in posts_blog %}
-  {% assign autor_raw = post.author | replace: "&", "," %}
+  {% assign autor_raw = post.author | replace: "&", "," | replace: " y ", "," %}
   {% assign autores_post = autor_raw | split: "," %}
   {% for autor in autores_post %}
     {% assign autor_limpio = autor | strip %}
