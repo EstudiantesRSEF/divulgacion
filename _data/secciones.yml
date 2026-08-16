@@ -16,9 +16,9 @@ hall-of-fame:
   descripcion: "Reconocemos a los físicos y físicas que han marcado un antes y un después en la historia de la ciencia."
   imagen: "/divulgacion/img/blog/secciones/hall-of-fame.jpg"
 
-i-concurso-relatos-divulgativos:
+concurso-relatos:
   titulo: "I Concurso de Relatos Divulgativos"
-  categoria: "I Concurso de Relatos Divulgativos"
+  categoria: "I Concurso Relatos Divulgativos"
   descripcion: "Relatos breves donde ciencia y literatura se encuentran, escritos por estudiantes de física."
   imagen: "/divulgacion/img/blog/secciones/concurso-relatos.png"
 
