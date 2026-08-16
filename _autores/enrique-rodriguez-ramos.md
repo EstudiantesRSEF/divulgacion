@@ -2,7 +2,7 @@
 layout: autor
 title: "Enrique Rodríguez Ramos"
 slug: enrique-rodriguez-ramos
-image: /Divulgacion/imagenes/autores/kike.jpeg
+image: /divulgacion/Divulgacion-cosas/imagenes/autores/kike.jpeg
 universidad: "Universidad de Granada"
 origen: "San Fernando, Cádiz"
 cumpleanos: "06/05/2003"
