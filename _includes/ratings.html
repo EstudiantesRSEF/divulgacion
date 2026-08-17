@@ -1,0 +1,68 @@
+<script type="module">
+  import {
+    doc, getDoc, setDoc, updateDoc
+  } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+  document.addEventListener('DOMContentLoaded', async () => {
+    // Espera un tick a que firebase-config.html haya inicializado la app
+    const db = window._firebaseDb;
+    if (!db) return;
+
+    const box = document.querySelector('.rating-box');
+    if (!box) return;
+
+    // Los IDs de documento en Firestore no pueden llevar "/", así que lo saneamos
+    const postId = box.dataset.postId.replace(/\//g, '_');
+    const docRef = doc(db, 'valoraciones', postId);
+    const avgSpan = document.getElementById('ratingAverage');
+    const votadoKey = `valorado-${postId}`;
+    const inputs = box.querySelectorAll('.star-rating input');
+
+    async function cargarMedia() {
+      try {
+        const snap = await getDoc(docRef);
+        if (snap.exists()) {
+          const { suma, votos } = snap.data();
+          const media = votos > 0 ? (suma / votos).toFixed(1) : '0.0';
+          avgSpan.textContent = `${media} / 5 (${votos} voto${votos === 1 ? '' : 's'})`;
+        } else {
+          avgSpan.textContent = 'Sin valoraciones todavía';
+        }
+      } catch (e) {
+        avgSpan.textContent = 'No se pudo cargar la valoración';
+        console.error(e);
+      }
+    }
+
+    await cargarMedia();
+
+    // Si ya votó desde este navegador, deshabilita los inputs
+    if (localStorage.getItem(votadoKey)) {
+      inputs.forEach(i => i.disabled = true);
+    }
+
+    inputs.forEach(input => {
+      input.addEventListener('change', async () => {
+        if (localStorage.getItem(votadoKey)) return;
+
+        const valor = parseInt(input.value, 10);
+        inputs.forEach(i => i.disabled = true); // evita doble click mientras escribe
+
+        try {
+          const snap = await getDoc(docRef);
+          if (snap.exists()) {
+            const { suma, votos } = snap.data();
+            await updateDoc(docRef, { suma: suma + valor, votos: votos + 1 });
+          } else {
+            await setDoc(docRef, { suma: valor, votos: 1 });
+          }
+          localStorage.setItem(votadoKey, String(valor));
+          await cargarMedia();
+        } catch (e) {
+          console.error('Error al votar:', e);
+          inputs.forEach(i => i.disabled = false); // reactiva si falló
+        }
+      });
+    });
+  });
+</script>
