@@ -1,0 +1,17 @@
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+  import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyCjOJ2yyKMSh0Z8dDEQbRyCgUAM8jMuApg",
+    authDomain: "gdee-blog-valoraciones.firebaseapp.com",
+    projectId: "gdee-blog-valoraciones",
+    storageBucket: "gdee-blog-valoraciones.firebasestorage.app",
+    messagingSenderId: "559863017257",
+    appId: "1:559863017257:web:3d671ef542103ef36a9138",
+    measurementId: "G-T5F5K9VQ1T"
+  };
+
+  window._firebaseApp = initializeApp(firebaseConfig);
+  window._firebaseDb = getFirestore(window._firebaseApp);
+</script>
