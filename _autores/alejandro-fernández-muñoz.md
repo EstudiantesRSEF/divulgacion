@@ -2,7 +2,7 @@
 layout: autor
 title: "Alejandro Fernández Muñoz"
 slug: alejandro-fernández-muñoz
-image: /divulgacion/Divulgacion-cosas/avatar-default.svg
+image: /divulgacion/Divulgacion-cosas/imagenes/autores/fundador.jpg
 universidad: "Universidad Complutense de Madrid"
 origen: "Madrid, España"
 cumpleanos: "--/--/----"
