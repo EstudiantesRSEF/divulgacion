@@ -248,6 +248,55 @@
     .post-body p { margin-bottom: 18px; }
     .post-body h2, .post-body h3 { color: var(--azul-marino); margin: 30px 0 14px; }
 
+
+
+        /* ===== Estilos heredados de _sass/components/_blog.scss =====
+       Portados aquí porque el blog actual ya no compila ese Sass;
+       todas las páginas del blog cargan sus estilos desde este
+       blog-styles.html. Scopeados a .post-body para no afectar
+       al resto del sitio. */
+    .post-body .img-left,
+    .post-body .img-right {
+        height: auto;
+        width: auto;
+        max-width: 45%;
+        max-height: 250px;
+        object-fit: contain;
+        margin: 0.5em;
+    }
+    .post-body .img-left {
+        float: left;
+        margin-right: 1.5em;
+    }
+    .post-body .img-right {
+        float: right;
+        margin-left: 1.5em;
+    }
+    .post-body .img-center {
+        display: block;
+        margin: 1em auto;
+        width: 60%;
+        max-width: 600px;
+    }
+    .post-body .img-center-large {
+        display: block;
+        margin: 1em auto;
+        width: 80%;
+        max-width: 800px;
+    }
+    
+    .post-body .titulo-capitulo {
+        text-align: center;
+        font-size: 2em;
+        font-weight: bold;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .post-body .dialogo {
+        margin-left: 40px;
+    }
+
+    
     /* Valoración de estrellas */
     .rating-box { margin: 50px 0 30px; padding: 26px; background: var(--blanco); border-radius: 14px; box-shadow: 0 6px 20px rgba(22,32,63,0.08); text-align: center; }
     .rating-box h3 { color: var(--azul-marino); margin-bottom: 14px; font-size: 1.1rem; }
