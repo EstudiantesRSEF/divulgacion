@@ -1,7 +1,7 @@
 ---
 layout: autor
-title: "Miriam Martínez Flores"
-slug: miriam-martínez-flores
+title: "Miriam Martínez Flórez"
+slug: miriam-martínez-flórez
 image: /divulgacion/Divulgacion-cosas/avatar-default.svg
 universidad: "-"
 origen: "-"
