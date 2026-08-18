@@ -1,0 +1,32 @@
+<script type="module">
+  import { doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+  document.addEventListener('DOMContentLoaded', async () => {
+    const db = window._firebaseDb;
+    if (!db) return;
+
+    const rows = document.querySelectorAll('.card-info-row[data-post-id]');
+
+    await Promise.all(Array.from(rows).map(async (row) => {
+      const postId = row.dataset.postId.replace(/\//g, '_');
+      const ratingSpan = row.querySelector('.card-rating');
+      const valueSpan = row.querySelector('.card-rating-value');
+      if (!ratingSpan || !valueSpan) return;
+
+      try {
+        const snap = await getDoc(doc(db, 'valoraciones', postId));
+        if (snap.exists()) {
+          const { suma, votos } = snap.data();
+          if (votos > 0) {
+            const media = (suma / votos).toFixed(1);
+            valueSpan.textContent = `${media} / 5`;
+            ratingSpan.style.display = '';
+          }
+        }
+        // Si no existe el documento o votos es 0, se deja oculto (sin valoración).
+      } catch (e) {
+        console.error('Error cargando valoración de', postId, e);
+      }
+    }));
+  });
+</script>
