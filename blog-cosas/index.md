@@ -110,6 +110,9 @@ permalink: "/blog/"
 
 </div>
 
+{% include firebase-config.html %}
+{% include card-ratings.html %}
+
 {% include blog-footer.html %}
 
 <script>
