@@ -1,20 +1,54 @@
 {% assign card_post = include.post %}
+{% assign autores_normalizado = card_post.author | replace: ",", "&" %}
+{% assign autores_lista = autores_normalizado | split: "&" %}
+{% assign primer_autor = autores_lista[0] | strip %}
+{% assign autor_info = site.data.autores[primer_autor] %}
+
+{% assign palabras = card_post.content | strip_html | number_of_words %}
+{% assign minutos_raw = palabras | divided_by: 200.0 %}
+{% assign tiempo_lectura = minutos_raw | ceil %}
+{% if tiempo_lectura < 1 %}{% assign tiempo_lectura = 1 %}{% endif %}
+
 <a href="{{ card_post.url | prepend: site.baseurl }}" class="post-card-large">
     {% if card_post.cover %}
         <img src="{{ card_post.cover }}" alt="{{ card_post.title }}" class="cover">
     {% endif %}
     <div class="body">
         <h3>{{ card_post.title }}</h3>
+
+        <div class="card-autor-row">
+            <img src="{{ autor_info.image | default: '/divulgacion/Divulgacion-cosas/avatar-default.svg' }}"
+                 alt="Foto de {{ primer_autor }}"
+                 class="card-autor-img"
+                 onerror="this.onerror=null;this.src='/divulgacion/Divulgacion-cosas/avatar-default.svg';">
+            <span class="card-autor-nombre">{{ card_post.author }}</span>
+        </div>
+
+        <div class="card-info-row" data-post-id="{{ card_post.url }}">
+            {% if card_post.date %}
+                <span class="card-info-item"><i class="fas fa-calendar-days"></i> {{ card_post.date | date: "%-d %b %Y" }}</span>
+            {% endif %}
+            <span class="card-info-item card-rating" style="display:none;">
+                <i class="fas fa-star"></i> <span class="card-rating-value"></span>
+            </span>
+            <span class="card-info-item"><i class="fas fa-clock"></i> {{ tiempo_lectura }} min</span>
+        </div>
+
         <div class="meta">
-            {% if card_post.date %}<span class="chip"><i class="fas fa-calendar-days"></i> {{ card_post.date | date: "%-d %b %Y" }}</span>{% endif %}
-            {% if card_post.author %}<span class="chip">{{ card_post.author }}</span>{% endif %}
             {% if card_post.categories %}
                 {% for category in card_post.categories %}
-                    {% unless category == 'blog' or category == 'blog-cosas' %}<span class="chip">{{ category }}</span>{% endunless %}
+                    {% unless category == 'blog' or category == 'blog-cosas' %}
+                        <span class="chip">{{ category }}</span>
+                    {% endunless %}
                 {% endfor %}
             {% endif %}
         </div>
+
         <p class="excerpt">{{ card_post.excerpt | strip_html }}</p>
-        <span class="leer-mas">Leer más...</span>
+
+        <div class="card-footer-row">
+            <span class="leer-mas">Leer más...</span>
+            <span class="card-views"><i class="fas fa-eye"></i> {{ card_post.views | default: 0 }} visita{% unless card_post.views == 1 %}s{% endunless %}</span>
+        </div>
     </div>
 </a>
