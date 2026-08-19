@@ -1,20 +1,26 @@
 # Este archivo se actualiza automáticamente cada noche mediante
 # .github/workflows/actualizar-visitas.yml — no lo edites a mano.
-/blog/: 32
+/blog/: 38
 /blog/2018/10/29/publica-con-nosotros/: 1
-/blog/2025/07/19/FRIKI1-Nubes-Kelvin/: 1
-/blog/2025/07/20/Amor-I/: 1
+/blog/2025/07/19/FRIKI1-Nubes-Kelvin/: 2
+/blog/2025/07/20/Amor-I/: 3
+/blog/2025/08/07/ENEF25Bilbao/: 2
+/blog/2025/08/16/FRIKI3-UnaPuestasdeSolenlaCaleta/: 2
+/blog/2025/09/06/FRIKI4-MachineLearning/: 2
 /blog/2025/10/17/EntrevistaEdelsteinI/: 2
+/blog/2025/10/22/EntrevistaEdelsteinII/: 1
+/blog/2025/11/23/FRIKI5-Interpretaciones/: 1
+/blog/2025/11/26/Entrevista-Anxo-Parte1/: 1
 /blog/2026/01/01/FRIKI7-Ehrenfest/: 1
 /blog/2026/02/28/ALM_Guitart/: 1
 /blog/2026/03/12/FRIKI8-Zenon/: 14
 /blog/2026/03/28/Eric_CERN/: 2
 /blog/2026/06/07/La_Sincronia_hizo_el_resto/: 1
-/blog/2026/06/17/Belen_YMLM/: 1
-/blog/2026/07/14/El_Demonio_de_Maxwell_1/: 1
+/blog/2026/06/17/Belen_YMLM/: 2
+/blog/2026/07/14/El_Demonio_de_Maxwell_1/: 2
 /blog/2026/07/23/VIDA/: 8
 /blog/autores/: 6
 /blog/secciones/diario-de-un-friki/: 1
 /blog/secciones/divulgacion/: 1
 /blog/secciones/entrevistas/: 1
-/blog/secciones/gdee-por-el-mundo/: 3
+/blog/secciones/gdee-por-el-mundo/: 4
