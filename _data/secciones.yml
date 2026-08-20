@@ -26,7 +26,7 @@ entrevistas:
   titulo: "Entrevistas"
   categoria: "Entrevistas"
   descripcion: "Conversaciones con investigadores, divulgadores y profesionales de la física."
-  imagen: "/divulgacion/img/blog/secciones/entrevistas.jpg"
+  imagen: "/divulgacion/img/blog/secciones/entrevistas.png"
 
 eventos:
   titulo: "Eventos"
