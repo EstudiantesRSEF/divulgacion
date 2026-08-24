@@ -1,9 +1,10 @@
 # Este archivo se actualiza automáticamente cada noche mediante
 # .github/workflows/actualizar-visitas.yml — no lo edites a mano.
-/blog/: 101
+/blog/: 106
 /blog/2018/10/29/publica-con-nosotros/: 1
 /blog/2020/10/11/memristores/: 6
-/blog/2021/05/16/EmisionFrustrada/: 6
+/blog/2020/12/12/ElMarDeFermi/: 97
+/blog/2021/05/16/EmisionFrustrada/: 10
 /blog/2021/11/25/ComputacionCuanticaHoy/: 1
 /blog/2022/02/18/MuerteTermica/: 2
 /blog/2025/07/19/FRIKI1-Nubes-Kelvin/: 3
@@ -25,7 +26,7 @@
 /blog/2026/07/22/El_Cielo_y_yo/: 5
 /blog/2026/07/23/VIDA/: 17
 /blog/autores/: 22
-/blog/secciones/concurso-relatos/: 2
+/blog/secciones/concurso-relatos/: 3
 /blog/secciones/diario-de-un-friki/: 3
 /blog/secciones/divulgacion/: 6
 /blog/secciones/entrevistas/: 10
