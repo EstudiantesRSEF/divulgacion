@@ -1,6 +1,6 @@
 # Este archivo se actualiza automáticamente cada noche mediante
 # .github/workflows/actualizar-visitas.yml — no lo edites a mano.
-/blog/: 121
+/blog/: 122
 /blog/2018/10/29/publica-con-nosotros/: 1
 /blog/2020/10/11/memristores/: 6
 /blog/2020/12/12/ElMarDeFermi/: 108
@@ -19,9 +19,9 @@
 /blog/2025/11/26/Entrevista-Anxo-Parte1/: 1
 /blog/2025/11/30/Rafa-NumerosPrimos/: 3
 /blog/2025/12/17/Entrevista-Anxo-II/: 2
-/blog/2026/01/01/FRIKI7-Ehrenfest/: 2
+/blog/2026/01/01/FRIKI7-Ehrenfest/: 3
 /blog/2026/02/28/ALM_Guitart/: 1
-/blog/2026/03/12/FRIKI8-Zenon/: 15
+/blog/2026/03/12/FRIKI8-Zenon/: 16
 /blog/2026/03/28/Eric_CERN/: 5
 /blog/2026/06/07/La_Sincronia_hizo_el_resto/: 1
 /blog/2026/06/17/Belen_YMLM/: 4
@@ -35,6 +35,6 @@
 /blog/secciones/divulgacion/: 6
 /blog/secciones/entrevistas/: 10
 /blog/secciones/eventos/: 1
-/blog/secciones/gdee-por-el-mundo/: 19
+/blog/secciones/gdee-por-el-mundo/: 20
 /blog/secciones/hall-of-fame/: 2
 /blog/secciones/reflexiones/: 2
