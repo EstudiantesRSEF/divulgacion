@@ -1,6 +1,6 @@
 # Este archivo se actualiza automáticamente cada noche mediante
 # .github/workflows/actualizar-visitas.yml — no lo edites a mano.
-/blog/: 130
+/blog/: 131
 /blog/2018/10/29/publica-con-nosotros/: 1
 /blog/2020/10/11/memristores/: 7
 /blog/2020/12/12/ElMarDeFermi/: 108
@@ -28,7 +28,7 @@
 /blog/2026/03/28/Eric_CERN/: 5
 /blog/2026/06/07/La_Sincronia_hizo_el_resto/: 3
 /blog/2026/06/12/Irreversible/: 1
-/blog/2026/06/17/Belen_YMLM/: 5
+/blog/2026/06/17/Belen_YMLM/: 6
 /blog/2026/07/06/Lo_que_aprendi_de_mi_abu/: 2
 /blog/2026/07/10/Por_que_los_barcos_flotan/: 1
 /blog/2026/07/12/Alineacion_para_una_noche_rara/: 1
@@ -36,12 +36,12 @@
 /blog/2026/07/21/El_latido_del_rio/: 7
 /blog/2026/07/22/El_Cielo_y_yo/: 7
 /blog/2026/07/23/VIDA/: 22
-/blog/autores/: 27
+/blog/autores/: 28
 /blog/secciones/concurso-relatos/: 11
 /blog/secciones/diario-de-un-friki/: 9
 /blog/secciones/divulgacion/: 7
 /blog/secciones/entrevistas/: 12
 /blog/secciones/eventos/: 1
-/blog/secciones/gdee-por-el-mundo/: 25
+/blog/secciones/gdee-por-el-mundo/: 26
 /blog/secciones/hall-of-fame/: 2
 /blog/secciones/reflexiones/: 3
