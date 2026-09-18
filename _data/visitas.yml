@@ -1,6 +1,6 @@
 # Este archivo se actualiza automáticamente cada noche mediante
 # .github/workflows/actualizar-visitas.yml — no lo edites a mano.
-/blog/: 144
+/blog/: 146
 /blog/2018/10/29/publica-con-nosotros/: 1
 /blog/2020/10/11/memristores/: 9
 /blog/2020/12/12/ElMarDeFermi/: 109
@@ -10,8 +10,8 @@
 /blog/2021/12/03/PalabrasDespedidaAlejandro/: 2
 /blog/2022/02/18/MuerteTermica/: 3
 /blog/2024/05/21/EntrevistaLuisViña/: 1
-/blog/2025/07/19/FRIKI1-Nubes-Kelvin/: 6
-/blog/2025/07/20/Amor-I/: 5
+/blog/2025/07/19/FRIKI1-Nubes-Kelvin/: 8
+/blog/2025/07/20/Amor-I/: 6
 /blog/2025/08/07/ENEF25Bilbao/: 2
 /blog/2025/08/16/FRIKI3-UnaPuestasdeSolenlaCaleta/: 2
 /blog/2025/09/06/FRIKI4-MachineLearning/: 4
@@ -33,7 +33,7 @@
 /blog/2026/03/28/Eric_CERN/: 6
 /blog/2026/06/07/La_Sincronia_hizo_el_resto/: 3
 /blog/2026/06/12/Irreversible/: 1
-/blog/2026/06/17/Belen_YMLM/: 10
+/blog/2026/06/17/Belen_YMLM/: 11
 /blog/2026/07/06/Lo_que_aprendi_de_mi_abu/: 2
 /blog/2026/07/10/Por_que_los_barcos_flotan/: 3
 /blog/2026/07/12/Alineacion_para_una_noche_rara/: 1
@@ -47,6 +47,6 @@
 /blog/secciones/divulgacion/: 7
 /blog/secciones/entrevistas/: 13
 /blog/secciones/eventos/: 1
-/blog/secciones/gdee-por-el-mundo/: 31
+/blog/secciones/gdee-por-el-mundo/: 32
 /blog/secciones/hall-of-fame/: 2
 /blog/secciones/reflexiones/: 3
