@@ -1,8 +1,8 @@
 # Este archivo se actualiza automáticamente cada noche mediante
 # .github/workflows/actualizar-visitas.yml — no lo edites a mano.
-/blog/: 176
+/blog/: 179
 /blog/2018/10/29/publica-con-nosotros/: 1
-/blog/2020/10/11/memristores/: 10
+/blog/2020/10/11/memristores/: 11
 /blog/2020/12/12/ElMarDeFermi/: 114
 /blog/2021/05/16/EmisionFrustrada/: 11
 /blog/2021/11/14/CartaDimisionAlejandro/: 2
@@ -27,9 +27,9 @@
 /blog/2025/12/17/Entrevista-Anxo-II/: 4
 /blog/2026/01/01/FRIKI7-Ehrenfest/: 5
 /blog/2026/01/15/Entrevista-Anxo-III/: 3
-/blog/2026/02/28/ALM_Guitart/: 4
+/blog/2026/02/28/ALM_Guitart/: 5
 /blog/2026/03/07/Entrevista-Juan-I/: 2
-/blog/2026/03/12/FRIKI8-Zenon/: 20
+/blog/2026/03/12/FRIKI8-Zenon/: 21
 /blog/2026/03/21/EntrevistaJuanII/: 4
 /blog/2026/03/28/Eric_CERN/: 11
 /blog/2026/06/07/La_Sincronia_hizo_el_resto/: 7
@@ -38,13 +38,13 @@
 /blog/2026/07/06/Lo_que_aprendi_de_mi_abu/: 9
 /blog/2026/07/10/Por_que_los_barcos_flotan/: 4
 /blog/2026/07/12/Alineacion_para_una_noche_rara/: 1
-/blog/2026/07/14/El_Demonio_de_Maxwell_1/: 29
+/blog/2026/07/14/El_Demonio_de_Maxwell_1/: 30
 /blog/2026/07/21/El_latido_del_rio/: 14
 /blog/2026/07/22/El_Cielo_y_yo/: 7
-/blog/2026/07/23/VIDA/: 62
-/blog/autores/: 33
+/blog/2026/07/23/VIDA/: 65
+/blog/autores/: 36
 /blog/secciones/concurso-relatos/: 15
-/blog/secciones/diario-de-un-friki/: 16
+/blog/secciones/diario-de-un-friki/: 18
 /blog/secciones/divulgacion/: 7
 /blog/secciones/entrevistas/: 14
 /blog/secciones/eventos/: 2
