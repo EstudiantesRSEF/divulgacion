@@ -1,9 +1,9 @@
 # Este archivo se actualiza automáticamente cada noche mediante
 # .github/workflows/actualizar-visitas.yml — no lo edites a mano.
-/blog/: 189
+/blog/: 190
 /blog/2018/10/29/publica-con-nosotros/: 1
 /blog/2020/10/11/memristores/: 11
-/blog/2020/12/12/ElMarDeFermi/: 114
+/blog/2020/12/12/ElMarDeFermi/: 115
 /blog/2021/05/16/EmisionFrustrada/: 11
 /blog/2021/11/14/CartaDimisionAlejandro/: 2
 /blog/2021/11/25/ComputacionCuanticaHoy/: 1
@@ -11,6 +11,7 @@
 /blog/2022/02/18/MuerteTermica/: 4
 /blog/2023/10/22/MateriaOscura/: 1
 /blog/2024/05/21/EntrevistaLuisViña/: 1
+/blog/2025/07/17/Entrevista_Anne/: 1
 /blog/2025/07/19/FRIKI1-Nubes-Kelvin/: 8
 /blog/2025/07/20/Amor-I/: 8
 /blog/2025/08/07/ENEF25Bilbao/: 2
@@ -52,4 +53,4 @@
 /blog/secciones/eventos/: 2
 /blog/secciones/gdee-por-el-mundo/: 40
 /blog/secciones/hall-of-fame/: 6
-/blog/secciones/reflexiones/: 3
+/blog/secciones/reflexiones/: 4
