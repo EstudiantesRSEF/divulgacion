@@ -1,6 +1,6 @@
 # Este archivo se actualiza automáticamente cada noche mediante
 # .github/workflows/actualizar-visitas.yml — no lo edites a mano.
-/blog/: 198
+/blog/: 199
 /blog/2018/10/29/publica-con-nosotros/: 1
 /blog/2020/10/11/memristores/: 11
 /blog/2020/11/01/LauraRodriguezArriaga-1/: 1
@@ -9,7 +9,7 @@
 /blog/2021/11/14/CartaDimisionAlejandro/: 2
 /blog/2021/11/25/ComputacionCuanticaHoy/: 1
 /blog/2021/12/03/PalabrasDespedidaAlejandro/: 4
-/blog/2022/02/18/MuerteTermica/: 4
+/blog/2022/02/18/MuerteTermica/: 5
 /blog/2023/10/22/MateriaOscura/: 1
 /blog/2024/05/21/EntrevistaLuisViña/: 1
 /blog/2025/07/17/Entrevista_Anne/: 1
@@ -46,7 +46,7 @@
 /blog/2026/07/21/El_latido_del_rio/: 15
 /blog/2026/07/22/El_Cielo_y_yo/: 8
 /blog/2026/07/23/VIDA/: 68
-/blog/autores/: 38
+/blog/autores/: 39
 /blog/secciones/concurso-relatos/: 15
 /blog/secciones/diario-de-un-friki/: 20
 /blog/secciones/divulgacion/: 7
