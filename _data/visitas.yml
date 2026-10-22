@@ -1,6 +1,6 @@
 # Este archivo se actualiza automáticamente cada noche mediante
 # .github/workflows/actualizar-visitas.yml — no lo edites a mano.
-/blog/: 206
+/blog/: 207
 /blog/2018/10/29/publica-con-nosotros/: 1
 /blog/2020/10/11/memristores/: 11
 /blog/2020/11/01/LauraRodriguezArriaga-1/: 1
@@ -20,7 +20,7 @@
 /blog/2025/08/07/ENEF25Bilbao/: 2
 /blog/2025/08/16/FRIKI3-UnaPuestasdeSolenlaCaleta/: 6
 /blog/2025/09/06/FRIKI4-MachineLearning/: 6
-/blog/2025/10/17/EntrevistaEdelsteinI/: 3
+/blog/2025/10/17/EntrevistaEdelsteinI/: 4
 /blog/2025/10/22/EntrevistaEdelsteinII/: 5
 /blog/2025/11/04/Nafski_Peralta/: 2
 /blog/2025/11/16/SIPE25_Guitart/: 1
@@ -41,7 +41,7 @@
 /blog/2026/06/07/La_Sincronia_hizo_el_resto/: 7
 /blog/2026/06/12/Irreversible/: 2
 /blog/2026/06/17/Belen_YMLM/: 12
-/blog/2026/07/06/Lo_que_aprendi_de_mi_abu/: 13
+/blog/2026/07/06/Lo_que_aprendi_de_mi_abu/: 15
 /blog/2026/07/10/Por_que_los_barcos_flotan/: 6
 /blog/2026/07/12/Alineacion_para_una_noche_rara/: 1
 /blog/2026/07/14/El_Demonio_de_Maxwell_1/: 30
