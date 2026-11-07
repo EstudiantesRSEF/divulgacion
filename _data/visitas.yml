@@ -1,8 +1,8 @@
 # Este archivo se actualiza automáticamente cada noche mediante
 # .github/workflows/actualizar-visitas.yml — no lo edites a mano.
-/blog/: 226
+/blog/: 227
 /blog/2018/10/29/publica-con-nosotros/: 1
-/blog/2020/10/11/memristores/: 12
+/blog/2020/10/11/memristores/: 13
 /blog/2020/11/01/LauraRodriguezArriaga-1/: 3
 /blog/2020/11/08/LauraRodriguezArriaga-2/: 2
 /blog/2020/11/29/EntrevistaCarlosHernandezGarcia/: 2
@@ -51,11 +51,11 @@
 /blog/2026/07/22/El_Cielo_y_yo/: 8
 /blog/2026/07/23/VIDA/: 69
 /blog/autores/: 45
-/blog/secciones/concurso-relatos/: 15
+/blog/secciones/concurso-relatos/: 16
 /blog/secciones/diario-de-un-friki/: 20
 /blog/secciones/divulgacion/: 8
 /blog/secciones/entrevistas/: 16
 /blog/secciones/eventos/: 2
 /blog/secciones/gdee-por-el-mundo/: 47
-/blog/secciones/hall-of-fame/: 11
+/blog/secciones/hall-of-fame/: 12
 /blog/secciones/reflexiones/: 8
