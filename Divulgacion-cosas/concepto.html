@@ -42,6 +42,23 @@ permalink: /concepto/
         a { text-decoration: none; color: inherit; }
         ul { list-style: none; }
 
+        /* Enlaces dentro del cuerpo del artículo: deben distinguirse del texto normal.
+           Va antes de las reglas de .cita-num / .bibliografia para que esas
+           (definidas más abajo, con la misma especificidad) sigan ganando ahí. */
+        .concepto-articulo a {
+            color: var(--azul-claro);
+            font-weight: 700;
+            text-decoration: none;
+            border-bottom: 2px solid var(--azul-pastel);
+            padding-bottom: 1px;
+            transition: color 0.2s, border-color 0.2s, background-color 0.2s;
+        }
+        .concepto-articulo a:hover {
+            color: var(--verde-hover);
+            border-bottom-color: var(--verde);
+            background-color: var(--verde-pastel);
+        }
+
         /* ===== HEADER (idéntico al resto del sitio) ===== */
         header {
             position: sticky;
