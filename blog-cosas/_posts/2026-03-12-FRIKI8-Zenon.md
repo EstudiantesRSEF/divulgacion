@@ -30,7 +30,7 @@ Había veces que yo notaba que me miraba un poco raro. ¿Qué estaría pensando?
 opinará de mí? Quizá me motivé demasiado con mi explicación de la <a href="https://estudiantes.rsef.es/blog/2026/01/01/FRIKI7-Ehrenfest/">paradoja de Ehrenfest</a>. Quizá estaba totalmente fuera de lugar sacar ese tema mientras estábamos en 
 la noria. ¿Pensará que soy un friki que no sabe relacionarse?
 </p>
-<p><img class="img-left" src="/img/blog/2026-03-12-FRIKI8-Zenon/friki_rallado.png">
+<p><img class="img-left" src="/divulgacion/img/blog/2026-03-12-FRIKI8-Zenon/friki_rallado.png">
 Ahora que lo pienso, no llegué ni a preguntarle 
 que qué había comido ese día; debe pensar que 
 no me intereso por ella. ¿Cómo pude ser tan 
@@ -51,7 +51,7 @@ demasiado insistente? ¿Se pensará que estoy obsesionado con ella?
 Brad Pitt; el ‘seductor del espacio-tiempo curvo’ me van a llamar a partir de ahora. Qué 
 ridículo hice… 
 </p>
-<p><img class="img-right" src="/img/blog/2026-03-12-FRIKI8-Zenon/friki_tapao.png">
+<p><img class="img-right" src="/divulgacion/img/blog/2026-03-12-FRIKI8-Zenon/friki_tapao.png">
 Encima llevándole flores en la primera cita… Ahora 
 ya sabe que estoy completamente obsesionado con 
 ella y que no soy más que un torpe niño que no sabe 
@@ -70,7 +70,7 @@ saludo es porque le tengo miedo, y entonces se dará cuenta de que soy un comple
 de mí mismo y no me verá nunca como más que aquel pobre friki que era muy gracioso 
 intentando ligar con ella. 
 </p>
-<p><img class="img-left" src="/img/blog/2026-03-12-FRIKI8-Zenon/friki_escondio.png">
+<p><img class="img-left" src="/divulgacion/img/blog/2026-03-12-FRIKI8-Zenon/friki_escondio.png">
 Mejor intentar evitarla. Que no nos crucemos más 
 y que esto se olvide de la memoria de los dos. 
 Como si esa cita no hubiera ocurrido: como si 
@@ -147,7 +147,7 @@ movimiento y el cambio no eran más que ilusorios. Las paradojas de Zenón supus
 las primeras argumentaciones basadas en la <i>reductio ad absurdum</i>, puesto que trataban de 
 ridiculizar una tesis demostrando que implicaba necesariamente conclusiones absurdas. 
 </p>
-<p><img class="img-right" src="/img/blog/2026-03-12-FRIKI8-Zenon/friki_zenon.png">
+<p><img class="img-right" src="/divulgacion/img/blog/2026-03-12-FRIKI8-Zenon/friki_zenon.png">
 Y tan profundas fueron las paradojas que presentó, que no fueron hasta el siglo XIX que se 
 crearon las herramientas matemáticas necesarias para analizarlas rigurosamente. Unas de las 
 más importantes conciernen a la naturaleza del movimiento. Zenón pareció demostrar que, si 
@@ -270,7 +270,7 @@ hacer que un sistema cuántico evolucione a lo que uno quiera observándolo apro
 así que eso es lo que tengo que hacer. Ir cambiando mis pensamientos poco a poco hasta que 
 ya haya superado aquello; hasta que sea un hombre nuevo. 
 </p>
-<p><img class="img-left" src="/img/blog/2026-03-12-FRIKI8-Zenon/friki_esperanza.png">
+<p><img class="img-left" src="/divulgacion/img/blog/2026-03-12-FRIKI8-Zenon/friki_esperanza.png">
 La Física… ¡ah, siempre dándome respuestas! 
 Solo falta conseguir superar esto de una vez. 
 </p>
