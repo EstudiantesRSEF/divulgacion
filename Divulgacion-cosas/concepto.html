@@ -1,0 +1,602 @@
+---
+permalink: /concepto/
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Por qué divulgación? | GdeE Divulgación</title>
+    <link rel="icon" type="image/png" href="/divulgacion/img/logos/logo-fondo-cuadrado.png">
+    <link rel="shortcut icon" type="image/png" href="/divulgacion/img/logos/logo-fondo-cuadrado.png">
+    <link rel="apple-touch-icon" href="/divulgacion/img/logos/logo-fondo-cuadrado.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --azul-marino: #16203F;
+            --azul-oscuro: #0E1730;
+            --azul-medio: #1B3B6F;
+            --azul-claro: #4A7FBF;
+            --azul-pastel: #DCE6F5;
+
+            --verde-oscuro: #03572B;
+            --verde: #78BE40;
+            --verde-hover: #5C9930;
+            --verde-pastel: #C8E4B4;
+
+            --rojo: #BD1D3A;
+            --rojo-hover: #971730;
+            --rojo-pastel: #F3D9DE;
+
+            --fondo: #f4f6fa;
+            --texto: #2c2f36;
+            --blanco: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; color: var(--texto); background-color: var(--fondo); line-height: 1.6; }
+        h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; }
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+
+        /* ===== HEADER (idéntico al resto del sitio) ===== */
+        header {
+            position: sticky;
+            top: 0; width: 100%;
+            background-color: rgba(22, 32, 63, 0.97);
+            color: var(--blanco);
+            padding: 0.9rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .logo { font-size: 1.15rem; font-weight: 800; color: var(--blanco); display: flex; align-items: center; gap: 15px; }
+        .logo-img { width: 56px; height: 56px; border-radius: 50%; object-fit: contain; background-color: var(--blanco); padding: 2px; border: 2px solid var(--verde); flex-shrink: 0; }
+        nav ul { display: flex; gap: 22px; align-items: center; flex-wrap: wrap; }
+        nav a { transition: color 0.3s; font-size: 0.92rem; font-weight: 600; }
+        nav a:hover { color: var(--verde); }
+
+        /* ===== HERO ===== */
+        .concepto-hero {
+            padding: 60px 6% 40px;
+            background-color: var(--blanco);
+            text-align: left;
+        }
+        .concepto-hero .volver {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--azul-claro);
+            font-weight: 600;
+            margin-bottom: 22px;
+            transition: color 0.25s;
+        }
+        .concepto-hero .volver:hover { color: var(--verde-hover); }
+        .concepto-hero h1 { color: var(--azul-marino); font-size: 2.6rem; margin-bottom: 10px; }
+        .concepto-hero .subtitulo { color: #667; font-size: 1.1rem; max-width: 760px; }
+        .concepto-hero .subtitulo strong { color: var(--azul-marino); }
+
+        /* ===== LAYOUT: SIDEBAR + ARTÍCULO ===== */
+        .concepto-layout {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 10px 6% 100px;
+            display: grid;
+            grid-template-columns: 270px minmax(0, 1fr);
+            gap: 60px;
+            align-items: start;
+        }
+
+        /* --- Sidebar índice, fija/estática al hacer scroll --- */
+        .concepto-sidebar {
+            position: sticky;
+            top: 100px; /* debajo de la cabecera sticky */
+            align-self: start;
+            background: var(--blanco);
+            border-radius: 14px;
+            padding: 26px 22px;
+            box-shadow: 0 8px 24px rgba(22, 32, 63, 0.1);
+            max-height: calc(100vh - 130px);
+            overflow-y: auto;
+        }
+        .concepto-sidebar h4 {
+            color: var(--azul-marino);
+            font-size: 0.78rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--verde-pastel);
+        }
+        .indice-lista { display: flex; flex-direction: column; gap: 2px; }
+        .indice-lista a {
+            display: block;
+            padding: 7px 10px;
+            border-radius: 7px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--azul-medio);
+            transition: background 0.2s, color 0.2s, padding-left 0.2s;
+            border-left: 3px solid transparent;
+        }
+        .indice-lista a:hover {
+            background: var(--verde-pastel);
+            color: var(--verde-oscuro);
+            padding-left: 14px;
+        }
+        .indice-lista a.activo {
+            border-left-color: var(--verde);
+            color: var(--verde-oscuro);
+            background: var(--verde-pastel);
+        }
+        .indice-lista .indice-sub { padding-left: 20px; font-weight: 500; font-size: 0.85rem; }
+        .indice-lista .indice-subsub { padding-left: 32px; font-weight: 500; font-size: 0.82rem; color: #667; }
+
+        /* ===== ARTÍCULO ===== */
+        .concepto-articulo { min-width: 0; }
+        .concepto-articulo section { scroll-margin-top: 100px; margin-bottom: 55px; }
+
+        .concepto-articulo p { font-size: 1.08rem; color: #3a3f4a; margin-bottom: 20px; }
+        .concepto-articulo h2 {
+            color: var(--azul-marino);
+            font-size: 1.9rem;
+            margin: 10px 0 22px;
+            padding-bottom: 12px;
+            border-bottom: 3px solid var(--azul-pastel);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .concepto-articulo h3 {
+            color: var(--verde-oscuro);
+            font-size: 1.35rem;
+            margin: 32px 0 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .concepto-articulo h3 .letra {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px; height: 30px;
+            background: var(--verde);
+            color: var(--blanco);
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 800;
+            flex-shrink: 0;
+        }
+
+        /* Bloque de intro / pregunta motivadora */
+        .intro-destacada {
+            background: var(--azul-pastel);
+            border-radius: 14px;
+            padding: 26px 30px;
+            margin-bottom: 30px;
+            font-size: 1.12rem;
+            color: var(--azul-marino);
+            font-weight: 500;
+        }
+
+        /* Citas / frases destacadas (para resaltar lo más importante) */
+        blockquote, .cita-destacada {
+            border-left: 5px solid var(--verde);
+            background: var(--verde-pastel);
+            color: var(--verde-oscuro);
+            padding: 18px 24px;
+            border-radius: 8px;
+            font-style: italic;
+            font-size: 1.12rem;
+            margin: 26px 0;
+        }
+
+        /* Resaltado de palabras/frases clave dentro del texto */
+        mark, .resalta {
+            background: linear-gradient(180deg, transparent 60%, var(--verde-pastel) 60%);
+            padding: 0 2px;
+            color: inherit;
+            font-weight: 700;
+        }
+        .resalta-roja {
+            background: linear-gradient(180deg, transparent 60%, var(--rojo-pastel) 60%);
+            font-weight: 700;
+        }
+
+        /* Etiqueta "capítulo" numerada (1., 2., 3., 4., 5.) */
+        .capitulo-num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 34px; height: 34px;
+            background: var(--azul-marino);
+            color: var(--verde);
+            border-radius: 50%;
+            font-weight: 800;
+            font-size: 1rem;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+
+        /* Pilares fundacionales (networking / desarrollo profesional / divulgación) */
+        .pilares {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+            gap: 18px;
+            margin: 26px 0 32px;
+        }
+        .pilar {
+            background: var(--blanco);
+            border: 2px solid var(--azul-pastel);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            transition: border-color 0.25s, transform 0.25s;
+        }
+        .pilar i { font-size: 1.6rem; color: var(--verde); margin-bottom: 10px; display: block; }
+        .pilar .nombre { font-weight: 800; color: var(--azul-marino); font-size: 1rem; }
+        .pilar.destacado { border-color: var(--verde); background: var(--verde-pastel); transform: translateY(-4px); }
+        .pilar.destacado .nombre { color: var(--verde-oscuro); }
+
+        /* Citas numeradas (superíndice) ancladas a la bibliografía */
+        .cita-num {
+            font-size: 0.72em;
+            vertical-align: super;
+            color: var(--verde-oscuro);
+            font-weight: 800;
+            white-space: nowrap;
+        }
+        .cita-num a { color: inherit; }
+        .cita-num a:hover { text-decoration: underline; }
+
+        /* Bibliografía */
+        .bibliografia {
+            background: var(--blanco);
+            border-radius: 14px;
+            padding: 30px 34px;
+            box-shadow: 0 8px 24px rgba(22, 32, 63, 0.08);
+            margin-top: 10px;
+        }
+        .bibliografia ol {
+            list-style: none;
+            counter-reset: ref-counter;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        .bibliografia li {
+            counter-increment: ref-counter;
+            font-size: 0.92rem;
+            color: #444;
+            padding-left: 34px;
+            position: relative;
+            scroll-margin-top: 110px;
+        }
+        .bibliografia li::before {
+            content: "[" counter(ref-counter) "]";
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-weight: 800;
+            color: var(--verde-oscuro);
+        }
+        .bibliografia li a { color: var(--azul-claro); word-break: break-word; }
+        .bibliografia li a:hover { color: var(--verde-hover); text-decoration: underline; }
+        .bibliografia li:target, .bibliografia li.resaltada-temporal {
+            background: var(--verde-pastel);
+            border-radius: 8px;
+            padding: 10px 10px 10px 40px;
+            margin-left: -10px;
+        }
+
+        .nota-placeholder {
+            font-size: 0.9rem;
+            color: #8a8f9a;
+            font-style: italic;
+        }
+
+        .cierre-final {
+            background: var(--azul-marino);
+            color: var(--blanco);
+            border-radius: 16px;
+            padding: 40px 44px;
+            margin-top: 50px;
+            text-align: center;
+        }
+        .cierre-final p { color: #dbe4f2; font-size: 1.12rem; }
+        .cierre-final .resalta { background: none; color: var(--verde); }
+
+        /* Frase manifiesto final, a modo de cita editorial con comillas de fondo */
+        .manifiesto {
+            position: relative;
+            font-family: 'Montserrat', sans-serif;
+            font-style: italic;
+            font-size: 1.4rem !important;
+            font-weight: 700;
+            line-height: 1.55;
+            color: var(--blanco) !important;
+            text-align: center;
+            background: linear-gradient(135deg, var(--azul-oscuro), var(--verde-oscuro));
+            border-radius: 20px;
+            padding: 54px 48px;
+            margin: 14px auto 28px;
+            max-width: 720px;
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+            overflow: hidden;
+        }
+        .manifiesto::before,
+        .manifiesto::after {
+            content: "\201C";
+            position: absolute;
+            font-family: Georgia, 'Times New Roman', serif;
+            font-style: normal;
+            font-size: 7rem;
+            line-height: 1;
+            color: rgba(255, 255, 255, 0.12);
+            z-index: 0;
+        }
+        .manifiesto::before { top: -6px; left: 16px; }
+        .manifiesto::after { content: "\201D"; bottom: -58px; right: 16px; }
+        .manifiesto > * { position: relative; z-index: 1; }
+
+        /* "para lo que tú quieras" subrayado a mano, estilo rotulador */
+        .resalta-quieras {
+            display: inline;
+            font-style: normal;
+            font-weight: 800;
+            color: var(--verde);
+            text-decoration: underline wavy var(--verde);
+            text-decoration-thickness: 3px;
+            text-underline-offset: 7px;
+        }
+        .cierre-final .btn {
+            margin-top: 18px;
+            background-color: var(--verde);
+            color: var(--azul-oscuro);
+            padding: 14px 30px;
+            border-radius: 8px;
+            font-weight: 800;
+            display: inline-block;
+            box-shadow: 0 6px 18px rgba(120, 190, 64, 0.4);
+            transition: all 0.3s;
+        }
+        .cierre-final .btn:hover { background-color: var(--verde-hover); transform: translateY(-3px); }
+
+        footer {
+            background: var(--azul-oscuro);
+            color: var(--fondo);
+            text-align: center;
+            padding: 30px;
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+        footer span { color: var(--verde); }
+
+        @media (max-width: 950px) {
+            .concepto-layout { grid-template-columns: 1fr; }
+            .concepto-sidebar {
+                position: static;
+                max-height: none;
+                margin-bottom: 10px;
+            }
+        }
+        @media (max-width: 800px) {
+            nav ul { flex-wrap: wrap; gap: 12px; justify-content: center; }
+            header { flex-direction: column; gap: 10px; padding: 1rem 5%; }
+            .concepto-hero { padding-left: 6%; padding-right: 6%; }
+            .concepto-hero h1 { font-size: 2rem; }
+            .cierre-final { padding: 30px 24px; }
+            .bibliografia { padding: 24px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="https://estudiantes.rsef.es/" class="logo">
+            <img src="/divulgacion/Divulgacion-cosas/logo_centrado.svg" alt="Logo GdeE RSEF" class="logo-img">
+            <span>Grupo de Estudiantes RSEF</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="/divulgacion">Home</a></li>
+                <li><a href="/divulgacion/#Concepto">Concepto</a></li>
+                <li><a href="/divulgacion/#Blog">Blog</a></li>
+                <li><a href="/divulgacion/#Podcast">Podcast</a></li>
+                <li><a href="/divulgacion/#Colabora">¡Colabora!</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="concepto-hero">
+        <a href="/divulgacion/" class="volver"><i class="fas fa-arrow-left"></i> Volver a Divulgación</a>
+        <h1>La Divulgación en el GdeE</h1>
+        <p class="subtitulo">El Grupo de Estudiantes de la Real Sociedad Española de Física se sustenta en <strong>3 pilares fundacionales</strong>: networking, desarrollo profesional, y divulgación. ¿Por qué es la divulgación igual de importante? ¿Y cómo la hacemos en el GdeE?</p>
+    </div>
+
+    <div class="concepto-layout">
+
+        <!-- ÍNDICE LATERAL, FIJO AL HACER SCROLL -->
+        <aside class="concepto-sidebar">
+            <h4>Índice</h4>
+            <nav class="indice-lista" id="indiceLista">
+                <a href="#pilares">Los 3 pilares del GdeE</a>
+                <a href="#por-que-divulgacion">¿Por qué divulgación?</a>
+                <a href="#divulgar-aprender" class="indice-sub">1. Divulgar para aprender</a>
+                <a href="#divulgar-ensenar" class="indice-sub">2. Divulgar para enseñar</a>
+                <a href="#divulgacion-gdee">Divulgación en el GdeE</a>
+                <a href="#gdee-posibilidad" class="indice-sub">3. El GdeE como posibilidad</a>
+                <a href="#gdee-lanzadera" class="indice-sub">4. El GdeE como lanzadera</a>
+                <a href="#gdee-referencia" class="indice-sub">5. El GdeE como punto de referencia</a>
+                <a href="#blog-revolucion" class="indice-subsub">a. El Blog como revolución</a>
+                <a href="#podcast-inspiracion" class="indice-subsub">b. El Podcast como inspiración</a>
+                <a href="#redes-altavoz" class="indice-subsub">c. Las Redes Sociales como altavoz</a>
+                <a href="#concursos-motivacion" class="indice-subsub">d. Los concursos como motivación</a>
+                <a href="#cierre">Para cerrar</a>
+                <a href="#bibliografia">Bibliografía</a>
+            </nav>
+        </aside>
+
+        <!-- ARTÍCULO -->
+        <article class="concepto-articulo">
+
+            <section id="pilares">
+                <p>El Grupo de Estudiantes de la Real Sociedad Española de Física se sustenta en 3 pilares fundacionales: <mark>networking</mark>, <mark>desarrollo profesional</mark>, y <mark>divulgación</mark>. Todos ellos igual de importantes en la actividad del GdeE; aunque de naturaleza distinta: networking para construir una red de contactos, desarrollo profesional para cultivar las habilidades necesarias en el mundo laboral… ¿y divulgación? Es una palabra demasiado amplia, tanto que si no se precisa pareciera que no es un pilar necesario… <strong>pero lo es</strong>. ¿Por qué? ¿Y cómo hacemos la divulgación en el GdeE?</p>
+
+                <div class="pilares">
+                    <div class="pilar"><i class="fas fa-people-group"></i><div class="nombre">Networking</div></div>
+                    <div class="pilar"><i class="fas fa-briefcase"></i><div class="nombre">Desarrollo profesional</div></div>
+                    <div class="pilar destacado"><i class="fas fa-bullhorn"></i><div class="nombre">Divulgación</div></div>
+                </div>
+            </section>
+
+            <section id="por-que-divulgacion">
+                <h2>¿Por qué divulgación?</h2>
+
+                <p>La divulgación de la ciencia a la sociedad no científica ya se ha demostrado como una herramienta muy poderosa para <mark>democratizar el conocimiento</mark>. Sin ir más lejos, muchos de los miembros del GdeE supieron que les interesaba la física gracias a la presencia cada vez mayor de divulgación en los últimos años. No obstante, el poder de la divulgación no se queda ahí: hay <strong>2 grandes motivos</strong> por los que divulgación es importante.</p>
+
+                <section id="divulgar-aprender">
+                    <h3><span class="letra">1</span>Divulgar para aprender</h3>
+
+                    <p>Uno de los mejores métodos de estudio según diversos estudios científicos <span class="cita-num">[<a href="#ref1">1</a>,&nbsp;<a href="#ref2">2</a>,&nbsp;<a href="#ref3">3</a>,&nbsp;<a href="#ref4">4</a>,&nbsp;<a href="#ref5">5</a>,&nbsp;<a href="#ref6">6</a>,&nbsp;<a href="#ref7">7</a>]</span> es el conocido como <mark>método de Feynman</mark>, que consiste en aprender explicando a otras personas: uno solo puede decir que ha logrado un buen entendimiento cuando es capaz de explicarlo en distintos niveles de complejidad.</p>
+
+                    <p>El proceso de aprendizaje por el que uno se somete cuando trata de divulgar un concepto tiene diferentes etapas y, en todas ellas, se aprende mucho más de lo que uno se imagina. Por ejemplo, solo cuando uno quiere explicar algo se da cuenta de que es necesario responder a todas esas preguntas a priori irrelevantes que no habían recibido tu atención hasta entonces. Ello sumado al proceso de depuración de la información y la materialización de la idea termina con muchos nuevos matices entendidos, nuevas formas de ver el mismo concepto, y un vínculo con la obra creada. <strong>¡Todo ello solo por explicar un concepto!</strong></p>
+                </section>
+
+                <section id="divulgar-ensenar">
+                    <h3><span class="letra">2</span>Divulgar para enseñar</h3>
+
+                    <p>¡Y lo mejor es que lo positivo de la divulgación no se queda ahí! La divulgación tiene el poder de ayudar a muchas personas al mismo tiempo: <mark>encender la llama de la curiosidad</mark> en la persona que te lee o te escucha, hacerle entender un concepto que se le atragantaba, o inspirarle para ir más allá.</p>
+
+                    <blockquote>La divulgación es ese medio en el que el aprendizaje no solo se queda en ti, sino que le puede servir a muchas personas.</blockquote>
+                </section>
+            </section>
+
+            <section id="divulgacion-gdee">
+                <h2>Divulgación en el GdeE</h2>
+
+                <p>Tras lo anterior, parece claro por qué la divulgación es positiva para uno mismo y para la sociedad. Sin embargo, <span class="resalta-roja">¿por qué es tan importante en el GdeE?</span></p>
+
+                <section id="gdee-posibilidad">
+                    <h2 class="con-numero"><span class="capitulo-num">3</span>El GdeE como posibilidad</h2>
+
+                    <p>El objetivo del GdeE no es hacernos virales, sino <mark>aportar valor real</mark> a los estudiantes de física y a la sociedad. Esta independencia con respecto a la viralidad nos permite ser el espacio para tratar conceptos no tan mainstream en nuestra actividad divulgativa y, por ejemplo, hablar sobre ese concepto de electromagnetismo que no acabas de entender en el Grado, o conectar lo que siempre has escuchado de la mecánica cuántica en vídeos de YouTube con la estructura subyacente de los espacios de Hilbert que has estudiado.</p>
+
+                    <p>La divulgación en el GdeE tiene las puertas abiertas a <strong>todo aquello que sea divulgable en física: toda la física</strong>. Es decir, además de divulgar la física para todos los públicos, incluyendo el público inexperto, tenemos la posibilidad de acoger divulgación para iniciados en física y fomentar la divulgación de conceptos más avanzados orientados a un público universitario, como lo es la mayor parte de los miembros del GdeE.</p>
+                </section>
+
+                <section id="gdee-lanzadera">
+                    <h2 class="con-numero"><span class="capitulo-num">4</span>El GdeE como lanzadera</h2>
+
+                    <p>Empezar un proyecto personal creando contenido de divulgación desde cero puede ser un camino muy duro: falta de experiencia, de audiencia, de ayuda… dificultades que lastran tu progreso y pueden llegar incluso a forzar el abandono en el proyecto. Ante esto, el GdeE se presenta como una <mark>lanzadera</mark> para impulsar tu proyecto durante las primeras etapas.</p>
+
+                    <p>Divulgar en el GdeE implica trabajar junto con muchos otros estudiantes, cada uno con experiencia en diferentes aspectos, y al mismo tiempo, alcanzar a un gran número de personas gracias a las plataformas activas del GdeE (<mark>con alrededor de 2.500 seguidores en Instagram</mark>, por ejemplo). Si alguna vez has sentido curiosidad por hacer divulgación, o te planteas empezar un proyecto personal y dar tus primeros pasos como divulgador profesional; hacerlo mediante el GdeE te da un impulso enorme para mejorar y crecer mejor y más rápido.</p>
+                </section>
+
+                <section id="gdee-referencia">
+                    <h2 class="con-numero"><span class="capitulo-num">5</span>El GdeE como punto de referencia</h2>
+
+                    <p>El Grupo de Estudiantes, como grupo especializado más grande dentro de la estructura de la Real Sociedad Española de Física, y uno de los <em>Territorial Committees</em> más activos dentro de la <em>International Association of Physics Students</em> (IAPS), ya es un punto de referencia en el panorama nacional e internacional de los estudiantes de Física. El objetivo del proyecto de divulgación en el GdeE es precisamente convertirnos en <mark>un punto de referencia, además, en la divulgación de la física</mark>.</p>
+
+                    <p>¡¿Que cómo?! Pues así:</p>
+
+                    <section id="blog-revolucion">
+                        <h3><span class="letra">a</span>El Blog como revolución</h3>
+
+                        <p>Nuestro <a href="/divulgacion/blog/">Blog de divulgación</a> se ha construido sobre el principio de dar cabida a todas las formas posibles de escribir sobre física. Con iniciativas como el <a href="/ConcursoRelatosDivulgativosGdeE/">I Concurso de Relatos Divulgativos</a> o secciones como el <a href="/divulgacion/blog/secciones/diario-de-un-friki/">Diario de un Friki</a>, impulsamos la vena más literaria de ver la física, reflexionando acerca de la vida y la percepción humanas al mismo tiempo que aprendemos física en niveles de complejidad diversos.</p>
+
+                        <p>También tenemos numerosas entradas centrándonos en la física o la matemática sin ningún otro tipo de distracciones, como <a href="/divulgacion/blog/2025/11/30/Rafa-NumerosPrimos/">esta</a> explicando la demostración de que los números primos son infinitos o <a href="/divulgacion/blog/2025/01/22/PremioNobel2023/">esta otra</a> contándote a fondo el Premio Nobel de física 2023.</p>
+
+                        <p>Por último, más allá de lo que nos puede inspirar la física, las secciones <a href="/divulgacion/blog/secciones/gdee-por-el-mundo/">GdeE por el mundo</a> y <a href="/divulgacion/blog/secciones/hall-of-fame/">El Hall of Fame del GdeE</a> tienen el objetivo de hacer visibles las oportunidades y los reconocimientos que miembros del grupo han sido capaces de disfrutar para que todos sepamos que existen y, quién sabe, también puedas disfrutarlos en el futuro.</p>
+
+                        <p>Todas estas y muchas más te esperan en <a href="/divulgacion/blog/">El Blog</a>. ¡No te lo pierdas!</p>
+                    </section>
+
+                    <section id="podcast-inspiracion">
+                        <h3><span class="letra">b</span>El Podcast como inspiración</h3>
+
+                        <p>El formato podcast ha supuesto una revolución en el entretenimiento en los últimos años. Con nuestro podcast, <a href="http://www.youtube.com/@grupodeestudiantesrsef" target="_blank"><strong>En la Onda del GdeE</strong></a>, pretendemos construir una fuente de aprendizaje y, sobretodo, de <mark>inspiración fácilmente accesible y consumible</mark>. En él grabamos episodios en los que o bien invitamos a investigadores expertos para discutir los resultados más relevantes de cada campo de la física; o bien a profesionales o figuras relevantes del mundo de la física para dar a conocer las distintas posibilidades que le son accesibles a un físico durante o después de acabar el grado; o bien divulgamos nosotros mismos sobre un tema en concreto.</p>
+
+                        <p>Tres objetivos, una misma plataforma. Con En la Onda del GdeE buscamos aportar valor a todo el mundo mientras que estamos de camino a algún sitio, cocinando, o dando un paseo, para servir como fuente de inspiración para todos los públicos.</p>
+                    </section>
+
+                    <section id="redes-altavoz">
+                        <h3><span class="letra">c</span>Las Redes Sociales como altavoz</h3>
+
+                        <p>El poder de alcanzar a grandes números de personas a través de las redes sociales es algo innegable. El formato vertical, bien utilizado, tiene el poder de hacer llegar a mucha gente con interés en la física la divulgación que hacemos desde el GdeE.</p>
+
+                        <p>Utilizar las redes sociales del GdeE para hacer divulgación supone una muy interesante manera para <mark>enseñar conceptos rápidos</mark>, tener un gran altavoz para alcanzar a muchas personas, o impulsarte como divulgador/a.</p>
+                    </section>
+
+                    <section id="concursos-motivacion">
+                        <h3><span class="letra">d</span>Los concursos como motivación</h3>
+
+                        <p>Por último, el GdeE también trata de ser un lugar para motivar a todo el mundo a desarrollar sus ideas divulgativas. Para ello, realizamos <a href="/ConcursoRelatosDivulgativosGdeE/">concursos anuales de divulgación</a> en el que todo el mundo puede participar, materializar sus ideas, y optar a unos increíbles premios.</p>
+
+                        <p>Pretendemos así ser un punto de referencia también a la hora de impulsar a los estudiantes indecisos a salir de su zona de confort, probar nuevos formatos y ser reconocidos por toda la comunidad de estudiantes.</p>
+                    </section>
+                </section>
+            </section>
+
+            <section id="cierre" class="cierre-final">
+                <p>El Grupo de Estudiantes de la Real Sociedad Española de Física anima a todo el mundo a divulgar la física que estudiamos.</p>
+
+                <p class="manifiesto">Divulgar para nosotros y para la sociedad, para aprender y para enseñar; para impulsar tu desarrollo profesional o personal; para ser <span class="resalta">punto de referencia</span>, de <span class="resalta">revolución</span>, de <span class="resalta">inspiración</span>, o de <span class="resalta">motivación</span>; o <span class="resalta-quieras">para lo que tú quieras</span>.</p>
+                <p>Si te gusta la divulgación, el GdeE tiene las puertas abiertas a todas tus ideas. Así que ya sabes, ¡da el paso y colabora con nosotros!</p>
+                <a href="https://forms.gle/2AYU4vsTf95mjJew5" target="_blank" class="btn">¡Colabora! <i class="fas fa-arrow-up-right-from-square"></i></a>
+            </section>
+
+            <section id="bibliografia">
+                <h2>Bibliografía</h2>
+                <div class="bibliografia">
+                    <ol>
+                        <li id="ref1">Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J., &amp; Willingham, D. T. (2013). Improving students' learning with effective learning techniques: Promising directions from cognitive and educational psychology. <em>Psychological Science in the Public Interest</em>, 14(1), 4–58. <a href="https://doi.org/10.1177/1529100612453266" target="_blank">https://doi.org/10.1177/1529100612453266</a></li>
+                        <li id="ref2">Roediger, H. L., &amp; Karpicke, J. D. (2006). Test-Enhanced Learning: Taking Memory Tests Improves Long-Term Retention. <em>Psychological Science</em>, 17(3), 249-255. <a href="https://doi.org/10.1111/j.1467-9280.2006.01693.x" target="_blank">https://doi.org/10.1111/j.1467-9280.2006.01693.x</a></li>
+                        <li id="ref3">Nestojko, J. F., Bui, D. C., Kornell, N., &amp; Bjork, E. L. (2014). Expecting to teach enhances learning and organization of knowledge in free recall of text passages. <em>Memory &amp; Cognition</em>, 42(7), 1038-1048. doi: 10.3758/s13421-014-0416-z. PMID: 24845756.</li>
+                        <li id="ref4">Rozenblit, L., &amp; Keil, F. (2002). The misunderstood limits of folk science: an illusion of explanatory depth. <em>Cognitive Science</em>, 26(5), 521-562. doi: 10.1207/s15516709cog2605_1. PMID: 21442007; PMCID: PMC3062901.</li>
+                        <li id="ref5">Chi, M. T. H., Bassok, M., Lewis, M. W., Reimann, P., &amp; Glaser, R. (1989). Self-explanations: How students study and use examples in learning to solve problems. <em>Cognitive Science</em>, 13(2), 145–182. <a href="https://doi.org/10.1207/s15516709cog1302_1" target="_blank">https://doi.org/10.1207/s15516709cog1302_1</a></li>
+                        <li id="ref6">Sweller, J. (1988). Cognitive Load During Problem Solving: Effects on Learning. <em>Cognitive Science</em>, 12, 257-285. <a href="https://doi.org/10.1207/s15516709cog1202_4" target="_blank">https://doi.org/10.1207/s15516709cog1202_4</a></li>
+                        <li id="ref7">Gentner, D. (1983). Structure-Mapping: A Theoretical Framework for Analogy. <em>Cognitive Science</em>, 7, 155-170. <a href="https://doi.org/10.1207/s15516709cog0702_3" target="_blank">https://doi.org/10.1207/s15516709cog0702_3</a></li>
+                    </ol>
+                </div>
+            </section>
+
+        </article>
+    </div>
+
+    <footer>
+        <p>GdeE Divulgación - <span>RSEF</span> — Grupo de Estudiantes</p>
+    </footer>
+
+    <script>
+        // Resalta en el índice la sección que se está leyendo (scrollspy sencillo)
+        const enlaces = document.querySelectorAll('#indiceLista a');
+        const secciones = Array.from(enlaces)
+            .map(a => document.getElementById(a.getAttribute('href').slice(1)))
+            .filter(Boolean);
+
+        function actualizarIndiceActivo() {
+            let actual = null;
+            secciones.forEach(sec => {
+                const rect = sec.getBoundingClientRect();
+                if (rect.top <= 130) actual = sec.id;
+            });
+            enlaces.forEach(a => {
+                a.classList.toggle('activo', a.getAttribute('href') === '#' + actual);
+            });
+        }
+        document.addEventListener('scroll', () => {
+            window.requestAnimationFrame(actualizarIndiceActivo);
+        });
+        actualizarIndiceActivo();
+    </script>
+
+</body>
+</html>
