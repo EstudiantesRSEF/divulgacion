@@ -42,6 +42,22 @@ permalink: /concepto/
         a { text-decoration: none; color: inherit; }
         ul { list-style: none; }
 
+        /* Botón genérico (idéntico al del resto del sitio), usado en el header para "¡Colabora!" */
+        .btn {
+            background-color: var(--verde);
+            color: var(--azul-oscuro);
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            transition: all 0.3s;
+            display: inline-block;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover { background-color: var(--verde-hover); transform: translateY(-2px); }
+        .btn-small { padding: 9px 18px; font-size: 0.85rem; }
+
         /* Enlaces dentro del cuerpo del artículo: deben distinguirse del texto normal.
            Va antes de las reglas de .cita-num / .bibliografia para que esas
            (definidas más abajo, con la misma especificidad) sigan ganando ahí. */
@@ -427,7 +443,7 @@ permalink: /concepto/
                 <li><a href="/divulgacion/#Concepto">Concepto</a></li>
                 <li><a href="/divulgacion/#Blog">Blog</a></li>
                 <li><a href="/divulgacion/#Podcast">Podcast</a></li>
-                <li><a href="/divulgacion/#Colabora">¡Colabora!</a></li>
+                <li><a href="/divulgacion/#Colabora" class="btn btn-small">¡Colabora!</a></li>
             </ul>
         </nav>
     </header>
