@@ -5,6 +5,7 @@ categories:
    - "GdeE por el mundo"
    - Eventos
 title:  "GdeE por el mundo: Rafa e Irene en PLANCKS 2026 en Eindhoven"
+cover: "/divulgacion/Divulgacion-cosas/ConcursoRelatos/portada.png"
 date: 2026-11-14 11:00
 author: Rafa & Irene
 redirect-from:
