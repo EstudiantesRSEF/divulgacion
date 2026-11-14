@@ -5,7 +5,7 @@ categories:
    - "GdeE por el mundo"
    - Eventos
 title:  "GdeE por el mundo: Rafa e Irene en PLANCKS 2026 en Eindhoven"
-cover: "/divulgacion/Divulgacion-cosas/ConcursoRelatos/portada.png"
+cover: "/divulgacion/ima/blog/2026-11-14-PLANCKS26-Rafa-Irene/foto5.jpeg"
 date: 2026-11-14 11:00
 author: Irene Prohens Peteracova & Rafael Pérez Monzó
 redirect-from:
@@ -41,7 +41,12 @@ Nos presentamos a la fase nacional con más ilusión que expectativas: ninguno c
 <p>
 Hasta que, cuando faltaba menos de un mes para la final, llegué una noche a casa después de entrenar y vi un mensaje de Àlex: <i>hay una plaza libre para ir a Eindhoven, ¿quieres venir?</i> No me lo pensé ni dos veces y respondí: ¡Me apunto!
 </p>
+<img
+     class = "img-center"
+     src="/divulgacion/img/blog/2026-11-14-PLANCKS26-Rafa-Irene/foto2.jpeg"
+    />
 
+<br>
 <h2>Camino a la Ciudad de la Luz</h2>
 
 <p>
@@ -51,7 +56,12 @@ Eindhoven es conocida como la Ciudad de la Luz. Y no, el nombre no viene de sus 
 <p>
 <b>Rafa:</b> Con la inscripción cubierta por la RSEF y el viaje financiado por la Universitat de València, al llegar nos encontramos con la primera sorpresa: la cantidad de españoles que éramos y de muchas universidades distintas. Como aprendí más tarde, esto es de lo más habitual: la delegación española es la que más participación tiene en la competición, con más de 140 equipos compitiendo este año en la fase nacional. Está claro que en España la física por equipos nos gusta.
 </p>
+<img
+     class = "img-center"
+     src="/divulgacion/img/blog/2026-11-14-PLANCKS26-Rafa-Irene/foto1.jpeg"
+    />
 
+<br>
 <p>
 <b>Irene:</b> En cuanto a la ciudad, cumplió mis expectativas: esperaba que fuera muy verde, y la verdad es que no me decepcionó. Lo que más me sorprendió fue la cantidad de bicicletas que había. Me quedé flipando cuando, el primer día, al bajar del autobús en la estación, vi un aparcamiento de bicicletas gigantesco en el que parecía que no quedaba ni un solo hueco libre. No pasó mucho tiempo en darme cuenta que allí las bicicletas son más importantes que los coches e incluso que los peatones.
 </p>
@@ -75,7 +85,12 @@ Eso sí, después de tantas noches bajo los focos del pabellón, creo que voy a 
 <p>
 A lo largo de la semana tuvimos el placer de asistir a varias charlas muy interesantes. La primera fue la de <b>Jaime Gómez Rivas</b>, sobre Nanofotónica e interacción luz-materia, que además fue la charla inaugural. Todos la escuchamos con mucha atención y con la ilusión de todo lo que nos esperaba durante esa semana.
 </p>
+<img
+     class = "img-center"
+     src="/divulgacion/img/blog/2026-11-14-PLANCKS26-Rafa-Irene/foto3.jpeg"
+    />
 
+<br>
 <p>
 Otra de las charlas fue la de <b>Cyrus Walther</b>, centrada en la astrofísica de altas energías y la inteligencia artificial. Fue, sin duda, una de las más originales, ya que la hizo de forma muy interactiva: en lugar de pasar un micrófono, lanzaba un cubo con un micrófono dentro para que pudiéramos participar. La verdad es que consiguió mantenernos a todos muy atentos a pesar del cansancio que llevábamos de toda la semana.
 </p>
@@ -109,7 +124,12 @@ Para que nos entendamos, la experiencia con los exámenes difíciles suele ser l
 <p>
 Al final de las 4 horas, mis compañeros y yo salimos razonablemente contentos, pues habíamos hecho lo posible e incluso lo imposible, si también lo imposible hubiera sido posible por ganar.
 </p>
+<img
+     class = "img-center"
+     src="/divulgacion/img/blog/2026-11-14-PLANCKS26-Rafa-Irene/foto4.jpeg"
+    />
 
+<br>
 <p>
 <b>Irene:</b> Mientras nuestros compañeros sufrían el examen, nosotros tuvimos el taller de <i>Observers</i>. Para romper el hielo, asistimos a una charla de IAPS que tuvo como objetivo informar a los representantes de los Comités Territoriales (TC) sobre las últimas novedades dentro del IAPS, al tiempo que les proporcionó un espacio para intercambiar experiencias y mantenerse conectados entre sí.
 </p>
@@ -135,7 +155,12 @@ Empezaron a desfilar los puestos del ránking y, equipo tras equipo, ni rastro d
 <p>
 El equipo ganador era de Pisa. Que, para ser justos, también tiene sol, mar (y muy buenos estudiantes de física). Nos quedamos con que durante unos pequeños instantes fuimos campeones del mundo, y con toda la maravillosa experiencia que fue esta competición.
 </p>
+<img
+     class = "img-center"
+     src="/divulgacion/img/blog/2026-11-14-PLANCKS26-Rafa-Irene/foto5.jpeg"
+    />
 
+<br>
 <p>
 Para un poco de contexto, nuestros compañeros estaban estudiando Probabilidad para un examen; y si algo sabíamos es que donde más probabilidad de pasarlo bien era en Ámsterdam. Así que nos fuimos un día para celebrar, y lo que pasa en Ámsterdam, se queda en Ámsterdam ;)
 </p>
