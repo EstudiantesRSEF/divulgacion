@@ -2,7 +2,7 @@
 layout: autor
 title: "Rafael Pérez Monzó"
 slug: rafael-pérez-monzó
-image: /divulgacion/Divulgacion-cosas/imagenes/autores/Irene-perfil.jpeg
+image: /divulgacion/Divulgacion-cosas/imagenes/autores/Rafa-perfil.jpeg
 universidad: "Universidad de Valencia (UV)"
 origen: "Albacete, Albacete"
 cumpleanos: "01/03/2004"
