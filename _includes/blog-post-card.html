@@ -1,8 +1,6 @@
 {% assign card_post = include.post %}
-{% assign autores_normalizado = card_post.author | replace: ",", "&" %}
+{% assign autores_normalizado = card_post.author | replace: ",", "&" | replace: " y ", "&" %}
 {% assign autores_lista = autores_normalizado | split: "&" %}
-{% assign primer_autor = autores_lista[0] | strip %}
-{% assign autor_info = site.data.autores[primer_autor] %}
 
 {% assign palabras = card_post.content | strip_html | number_of_words %}
 {% assign minutos_raw = palabras | divided_by: 200.0 %}
@@ -16,12 +14,18 @@
     <div class="body">
         <h3>{{ card_post.title }}</h3>
 
-        <div class="card-autor-row">
-            <img src="{{ autor_info.image | default: '/divulgacion/Divulgacion-cosas/avatar-default.svg' }}"
-                 alt="Foto de {{ primer_autor }}"
-                 class="card-autor-img"
-                 onerror="this.onerror=null;this.src='/divulgacion/Divulgacion-cosas/avatar-default.svg';">
-            <span class="card-autor-nombre">{{ card_post.author }}</span>
+        <div class="card-autores">
+            {% for autor_raw in autores_lista %}
+                {% assign autor_nombre = autor_raw | strip %}
+                {% assign autor_info = site.data.autores[autor_nombre] %}
+                <div class="card-autor-row">
+                    <img src="{{ autor_info.image | default: '/divulgacion/Divulgacion-cosas/avatar-default.svg' }}"
+                         alt="Foto de {{ autor_nombre }}"
+                         class="card-autor-img"
+                         onerror="this.onerror=null;this.src='/divulgacion/Divulgacion-cosas/avatar-default.svg';">
+                    <span class="card-autor-nombre">{{ autor_nombre }}</span>
+                </div>
+            {% endfor %}
         </div>
 
         <div class="card-info-row" data-post-id="{{ card_post.url }}">
