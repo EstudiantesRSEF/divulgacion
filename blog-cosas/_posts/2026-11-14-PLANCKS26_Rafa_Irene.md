@@ -7,7 +7,7 @@ categories:
 title:  "GdeE por el mundo: Rafa e Irene en PLANCKS 2026 en Eindhoven"
 cover: "/divulgacion/Divulgacion-cosas/ConcursoRelatos/portada.png"
 date: 2026-11-14 11:00
-author: Rafa & Irene
+author: Rafael Pérez Monzó & Irene Prohens Peteracova
 redirect-from:
 excerpt: "¿Qué puede salir de un correo de la universidad un día cualquiera de febrero? A Rafa y a sus compañeros les salió un billete a Eindhoven para competir en PLANCKS 2026, la competición internacional de física teórica por equipos. Y como toda buena historia merece ser contada desde más de un ángulo, esta vez tenemos dos voces: la de Rafa, que vivió la competición desde dentro, y la de Irene, que la vivió como observer."
 ---
