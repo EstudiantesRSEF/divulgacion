@@ -3,7 +3,7 @@ layout: autor
 title: "Irene Prohens Peteracova"
 slug: irene-prohens-peteracova
 image: /divulgacion/Divulgacion-cosas/imagenes/autores/Irene-perfil.jpeg
-universidad: "Universidad de les Illes Balears (UIB)"
+universidad: "Universitat de les Illes Balears (UIB)"
 origen: "Palma, Mallorca"
 cumpleanos: "04/08/2006"
 ---
