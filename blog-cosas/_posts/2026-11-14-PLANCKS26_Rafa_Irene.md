@@ -5,7 +5,7 @@ categories:
    - "GdeE por el mundo"
    - Eventos
 title:  "GdeE por el mundo: Rafa e Irene en PLANCKS 2026 en Eindhoven"
-cover: "/divulgacion/ima/blog/2026-11-14-PLANCKS26-Rafa-Irene/foto5.jpeg"
+cover: "/divulgacion/img/blog/2026-11-14-PLANCKS26-Rafa-Irene/foto5.jpeg"
 date: 2026-11-14 11:00
 author: Irene Prohens Peteracova & Rafael Pérez Monzó
 redirect-from:
