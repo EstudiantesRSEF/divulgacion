@@ -1,6 +1,6 @@
 # Este archivo se actualiza automáticamente cada noche mediante
 # .github/workflows/actualizar-visitas.yml — no lo edites a mano.
-/blog/: 245
+/blog/: 258
 /blog/2018/10/29/publica-con-nosotros/: 1
 /blog/2020/10/11/memristores/: 13
 /blog/2020/11/01/LauraRodriguezArriaga-1/: 3
@@ -16,7 +16,7 @@
 /blog/2023/10/22/MateriaOscura/: 2
 /blog/2024/05/21/EntrevistaLuisViña/: 1
 /blog/2025/01/22/PremioNobel2023/: 2
-/blog/2025/07/17/Entrevista_Anne/: 6
+/blog/2025/07/17/Entrevista_Anne/: 7
 /blog/2025/07/19/FRIKI1-Nubes-Kelvin/: 9
 /blog/2025/07/20/Amor-I/: 8
 /blog/2025/08/07/ENEF25Bilbao/: 2
@@ -36,26 +36,27 @@
 /blog/2026/01/01/FRIKI7-Ehrenfest/: 5
 /blog/2026/01/15/Entrevista-Anxo-III/: 5
 /blog/2026/02/28/ALM_Guitart/: 6
-/blog/2026/03/07/Entrevista-Juan-I/: 5
+/blog/2026/03/07/Entrevista-Juan-I/: 7
 /blog/2026/03/12/FRIKI8-Zenon/: 29
-/blog/2026/03/21/EntrevistaJuanII/: 9
+/blog/2026/03/21/EntrevistaJuanII/: 10
 /blog/2026/03/28/Eric_CERN/: 14
 /blog/2026/06/07/La_Sincronia_hizo_el_resto/: 16
 /blog/2026/06/12/Irreversible/: 4
-/blog/2026/06/17/Belen_YMLM/: 13
+/blog/2026/06/17/Belen_YMLM/: 15
 /blog/2026/07/06/Lo_que_aprendi_de_mi_abu/: 17
 /blog/2026/07/10/Por_que_los_barcos_flotan/: 9
 /blog/2026/07/12/Alineacion_para_una_noche_rara/: 2
 /blog/2026/07/14/El_Demonio_de_Maxwell_1/: 32
 /blog/2026/07/21/El_latido_del_rio/: 19
-/blog/2026/07/22/El_Cielo_y_yo/: 8
+/blog/2026/07/22/El_Cielo_y_yo/: 9
 /blog/2026/07/23/VIDA/: 69
-/blog/autores/: 45
+/blog/2026/11/14/PLANCKS26_Rafa_Irene/: 16
+/blog/autores/: 48
 /blog/secciones/concurso-relatos/: 17
 /blog/secciones/diario-de-un-friki/: 23
 /blog/secciones/divulgacion/: 10
 /blog/secciones/entrevistas/: 16
 /blog/secciones/eventos/: 2
-/blog/secciones/gdee-por-el-mundo/: 48
-/blog/secciones/hall-of-fame/: 12
+/blog/secciones/gdee-por-el-mundo/: 49
+/blog/secciones/hall-of-fame/: 15
 /blog/secciones/reflexiones/: 8
