@@ -26,7 +26,7 @@ Querido Diario:
 <br>
 
 <p>
-<img class="img-left" src="/img/blog/2025-09-06-FRIKI4-MachineLearning/6 sept 2025, 13_26_03.png">
+<img class="img-left" src="/divulgacion/img/blog/2025-09-06-FRIKI4-MachineLearning/6 sept 2025, 13_26_03.png">
 Ayer, domingo, le echaron agua en la cabeza a mi primo pequeño Roberto. Todavía sigo sin entender por qué lo hacían y por qué todo el mundo estaba tan expectante por ello. Que sí, que el bautismo es el primer sacramento de la fe cristiana y todo eso, pero para uno que sabe, como yo, que el mundo no es más que leyes físicas rigiendo el comportamiento de materia y energía, todo aquello parecía más un rito de iniciación a una secta que cualquier otra cosa. Además, no sé por qué se hace esto cuando el primo Roberto es prácticamente un bebé y para él ese episodio supone casi más una ducha en condiciones extraordinarias con un cura que no conoce, en un edificio que no es su cuarto de baño, y con muchos ojos más que los de sus padres que le vigilan mientras. Normal que el niño no parase de llorar… 
 </p>
 
@@ -63,7 +63,7 @@ La última pregunta era vital para responder la primera. Pues no creo que por de
 </p>
 
 <p>
-<img class="img-left" src="/img/blog/2025-09-06-FRIKI4-MachineLearning/ChatGPT Image 6 sept 2025, 13_19_41.png">Cuando ya llegamos donde mi tío Paco quería llevarme, paró de comerme la oreja y me dijo:
+<img class="img-left" src="/divulgacion/img/blog/2025-09-06-FRIKI4-MachineLearning/ChatGPT Image 6 sept 2025, 13_19_41.png">Cuando ya llegamos donde mi tío Paco quería llevarme, paró de comerme la oreja y me dijo:
 </p>
 
 <p>
@@ -86,7 +86,7 @@ Es más, la frase «<i>más sabe el diablo por viejo que por diablo</i>»  es a�
 
 <img
      class = "img-center"
-     src="/img/blog/2025-09-06-FRIKI4-MachineLearning/supervised.png"
+     src="/divulgacion/img/blog/2025-09-06-FRIKI4-MachineLearning/supervised.png"
     />
    <p>
       <i>Sistema de aprendizaje supervisado. El algoritmo, en base a los ejemplos que ha visto en la fase de entrenamiento, dirá que el caso nuevo será bueno (tick verde) o spam.</i>
@@ -106,7 +106,7 @@ Como siempre mamá, tan oportuna, no solo me salvó de la chapa del tío, sino q
 
 <img
      class = "img-center"
-     src="/img/blog/2025-09-06-FRIKI4-MachineLearning/nosupervised.png"
+     src="/divulgacion/img/blog/2025-09-06-FRIKI4-MachineLearning/nosupervised.png"
     />
    <p>
       <i>Sistema de aprendizaje no supervisado. El algoritmo detecta que el nuevo caso se comporta diferente que el resto de ejemplos que ya ha estudiado y marca que es una anomalía.</i>
@@ -125,7 +125,7 @@ Como siempre mamá, tan oportuna, no solo me salvó de la chapa del tío, sino q
 
 <img
      class = "img-center"
-     src="/img/blog/2025-09-06-FRIKI4-MachineLearning/reinforcement.png"
+     src="/divulgacion/img/blog/2025-09-06-FRIKI4-MachineLearning/reinforcement.png"
     />
    <p>
       <i>Sistema de aprendizaje de reforzamiento. El algoritmo crea una manera de comportarse. Si recibe un castigo, detecta que no debe hacerlo y cambia su rutina para conseguir una recompensa.</i>
@@ -160,7 +160,7 @@ Mi otro primo Sergio, que ahora está entrando en la pubertad y tiene arrebatos 
 
 <img
      class = "img-center"
-     src="/img/blog/2025-09-06-FRIKI4-MachineLearning/instances.png"
+     src="/divulgacion/img/blog/2025-09-06-FRIKI4-MachineLearning/instances.png"
     />
    <p>
       <i>Sistema de aprendizaje instance-based. El algoritmo detecta que el nuevo caso está más cerca de los triángulos (se parece más), y lo calificará como tal. Realmente no entiende que es un triángulo o un cuadrado, solo compara.</i>
@@ -176,7 +176,7 @@ Pues bien, ambos tipos de aprendizaje resultan muy útiles para según qué prob
 
 <img
      class = "img-center"
-     src="/img/blog/2025-09-06-FRIKI4-MachineLearning/model.png"
+     src="/divulgacion/img/blog/2025-09-06-FRIKI4-MachineLearning/model.png"
     />
    <p>
       <i>Sistema de aprendizaje model-based. El algoritmo crea un modelo según el cual el caso nuevo corresponde a un triángulo.</i>
