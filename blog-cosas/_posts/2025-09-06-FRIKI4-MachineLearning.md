@@ -5,6 +5,7 @@ categories:
    - Divulgación 
    - "Diario de un Friki"
 title:  "Diario de un Friki IV: El bautizo de mi primo Roberto. Una Introducción al Machine Learning"
+"/divulgacion/img/blog/2025-09-06-FRIKI4-MachineLearning/ChatGPT Image 6 sept 2025, 13_19_41.png"
 date: 2025-09-06 11:00
 author: Enrique Rodríguez Ramos
 redirect-from:
