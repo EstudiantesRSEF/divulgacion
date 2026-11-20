@@ -1,6 +1,6 @@
 # Este archivo se actualiza automáticamente cada noche mediante
 # .github/workflows/actualizar-visitas.yml — no lo edites a mano.
-/blog/: 259
+/blog/: 260
 /blog/2018/10/29/publica-con-nosotros/: 1
 /blog/2020/10/11/memristores/: 13
 /blog/2020/11/01/LauraRodriguezArriaga-1/: 3
@@ -14,7 +14,7 @@
 /blog/2021/12/03/PalabrasDespedidaAlejandro/: 4
 /blog/2022/02/18/MuerteTermica/: 5
 /blog/2023/10/22/MateriaOscura/: 2
-/blog/2024/05/21/EntrevistaLuisViña/: 1
+/blog/2024/05/21/EntrevistaLuisViña/: 2
 /blog/2025/01/22/PremioNobel2023/: 2
 /blog/2025/07/17/Entrevista_Anne/: 7
 /blog/2025/07/19/FRIKI1-Nubes-Kelvin/: 9
@@ -34,7 +34,7 @@
 /blog/2025/12/12/EntrevistaEdelsteinIII/: 2
 /blog/2025/12/17/Entrevista-Anxo-II/: 4
 /blog/2026/01/01/FRIKI7-Ehrenfest/: 5
-/blog/2026/01/15/Entrevista-Anxo-III/: 5
+/blog/2026/01/15/Entrevista-Anxo-III/: 6
 /blog/2026/02/28/ALM_Guitart/: 6
 /blog/2026/03/07/Entrevista-Juan-I/: 7
 /blog/2026/03/12/FRIKI8-Zenon/: 29
