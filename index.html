@@ -290,18 +290,22 @@ permalink: /
             box-shadow: 0 14px 30px rgba(11, 31, 58, 0.2);
             border-top-color: var(--verde);
         }
-        .blog-card-header {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 15px;
-        }
+        .blog-card-autores { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+        .avatar-stack { position: relative; flex-shrink: 0; }
         .blog-author-img {
-            width: 48px; height: 48px;
+            position: absolute;
+            width: 40px; height: 40px;
             border-radius: 50%;
             object-fit: cover;
-            border: 2px solid var(--azul-pastel);
+            border: 2px solid var(--blanco);
+            box-shadow: 0 0 0 1px var(--azul-pastel);
+            background: var(--blanco);
         }
+        .blog-autores-nombres { display: flex; flex-direction: column; }
+        .blog-autores-nombres strong { font-size: 0.85rem; color: var(--azul-medio); line-height: 20px; }
+        .blog-card-autores.solo .blog-autores-nombres strong { line-height: 40px; }
+        .blog-date { margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }
+        .blog-date i { color: var(--verde); }
         .blog-meta { font-size: 0.85rem; color: #777; }
         .blog-meta strong { color: var(--azul-medio); }
         .blog-card h3 { font-size: 1.15rem; color: var(--azul-marino); margin-bottom: 10px; }
@@ -491,12 +495,34 @@ permalink: /
             <div class="blog-carousel" id="blogCarousel">
 
                 {% for post in site.posts limit:5 %}
-                {% assign autor_info = site.data.autores[post.author] %}
+                {% assign autores_normalizado = post.author | replace: ",", "&" | replace: " y ", "&" %}
+                {% assign autores_lista = autores_normalizado | split: "&" %}
                 <a href="/divulgacion/{{ post.url }}" class="blog-card">
-                    <div class="blog-card-header">
-                        <img src="{{ autor_info.image | default: '/divulgacion/Divulgacion-cosas/avatar-default.svg' }}" alt="Foto de {{ post.author }}" class="blog-author-img" onerror="this.onerror=null;this.src='/Divulgacion/avatar-default.svg';">
-                        <div class="blog-meta">{{ post.date | date: "%-d %B %Y" }}<br><strong>{{ post.author }}</strong></div>
+                    {% assign n_autores = autores_lista.size %}
+                    {% assign alto_stack = n_autores | minus: 1 | times: 20 | plus: 40 %}
+                    {% assign ancho_stack = n_autores | minus: 1 | times: 7 | plus: 40 %}
+                    
+                    <div class="blog-card-autores{% if n_autores == 1 %} solo{% endif %}">
+                        <div class="avatar-stack" style="width: {{ ancho_stack }}px; height: {{ alto_stack }}px;">
+                            {% for autor_raw in autores_lista %}
+                                {% assign autor_nombre = autor_raw | strip %}
+                                {% assign autor_info = site.data.autores[autor_nombre] %}
+                                <img src="{{ autor_info.image | default: '/divulgacion/Divulgacion-cosas/avatar-default.svg' }}"
+                                     alt="Foto de {{ autor_nombre }}"
+                                     class="blog-author-img"
+                                     style="top: {{ forloop.index0 | times: 20 }}px; left: {{ forloop.index0 | times: 7 }}px; z-index: {{ forloop.index }};"
+                                     onerror="this.onerror=null;this.src='/divulgacion/Divulgacion-cosas/avatar-default.svg';">
+                            {% endfor %}
+                        </div>
+                        <div class="blog-autores-nombres">
+                            {% for autor_raw in autores_lista %}
+                                <strong>{{ autor_raw | strip }}</strong>
+                            {% endfor %}
+                        </div>
                     </div>
+                        {% endfor %}
+                    </div>
+                    <div class="blog-meta blog-date"><i class="fas fa-calendar-days"></i> {{ post.date | date: "%-d %B %Y" }}</div>
                     <h3>{{ post.title }}</h3>
                     <p class="blog-abstract">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
                 </a>
