@@ -501,7 +501,6 @@ permalink: /
                     {% assign n_autores = autores_lista.size %}
                     {% assign alto_stack = n_autores | minus: 1 | times: 20 | plus: 40 %}
                     {% assign ancho_stack = n_autores | minus: 1 | times: 7 | plus: 40 %}
-                    
                     <div class="blog-card-autores{% if n_autores == 1 %} solo{% endif %}">
                         <div class="avatar-stack" style="width: {{ ancho_stack }}px; height: {{ alto_stack }}px;">
                             {% for autor_raw in autores_lista %}
@@ -519,8 +518,6 @@ permalink: /
                                 <strong>{{ autor_raw | strip }}</strong>
                             {% endfor %}
                         </div>
-                    </div>
-                        {% endfor %}
                     </div>
                     <div class="blog-meta blog-date"><i class="fas fa-calendar-days"></i> {{ post.date | date: "%-d %B %Y" }}</div>
                     <h3>{{ post.title }}</h3>
