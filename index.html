@@ -301,9 +301,30 @@ permalink: /
             box-shadow: 0 0 0 1px var(--azul-pastel);
             background: var(--blanco);
         }
-        .blog-autores-nombres { display: flex; flex-direction: column; }
-        .blog-autores-nombres strong { font-size: 0.85rem; color: var(--azul-medio); line-height: 20px; }
-        .blog-card-autores.solo .blog-autores-nombres strong { line-height: 40px; }
+        .blog-autores-nombres { display: flex; flex-direction: column; min-width: 0; }
+        
+        /* Varios autores: cada nombre ocupa una caja de 40px (como su foto), centrado verticalmente.
+           La caja siguiente se solapa 20px, igual que las fotos, así cada nombre queda alineado con la suya. */
+        .blog-autores-nombres strong {
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            font-size: 0.85rem;
+            color: var(--azul-medio);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .blog-autores-nombres strong + strong { margin-top: -20px; }
+        
+        /* Un solo autor: el nombre puede ocupar dos líneas, juntas y centradas con la foto */
+        .blog-card-autores.solo .blog-autores-nombres { align-self: center; }
+        .blog-card-autores.solo .blog-autores-nombres strong {
+            height: auto;
+            line-height: 1.25;
+            white-space: normal;
+            overflow: visible;
+        }
         .blog-date { margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }
         .blog-date i { color: var(--verde); }
         .blog-meta { font-size: 0.85rem; color: #777; }
