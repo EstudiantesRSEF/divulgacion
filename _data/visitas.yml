@@ -1,23 +1,23 @@
 # Este archivo se actualiza automáticamente cada noche mediante
 # .github/workflows/actualizar-visitas.yml — no lo edites a mano.
-/blog/: 272
+/blog/: 276
 /blog/2018/10/29/publica-con-nosotros/: 1
 /blog/2020/10/11/memristores/: 14
-/blog/2020/11/01/LauraRodriguezArriaga-1/: 3
+/blog/2020/11/01/LauraRodriguezArriaga-1/: 4
 /blog/2020/11/08/LauraRodriguezArriaga-2/: 2
 /blog/2020/11/29/EntrevistaCarlosHernandezGarcia/: 2
 /blog/2020/12/12/ElMarDeFermi/: 122
 /blog/2021/05/16/EmisionFrustrada/: 11
 /blog/2021/10/17/IPhO21/: 1
-/blog/2021/11/14/CartaDimisionAlejandro/: 3
+/blog/2021/11/14/CartaDimisionAlejandro/: 7
 /blog/2021/11/25/ComputacionCuanticaHoy/: 1
-/blog/2021/12/03/PalabrasDespedidaAlejandro/: 4
-/blog/2022/02/18/MuerteTermica/: 7
+/blog/2021/12/03/PalabrasDespedidaAlejandro/: 7
+/blog/2022/02/18/MuerteTermica/: 8
 /blog/2023/10/22/MateriaOscura/: 2
 /blog/2024/05/21/EntrevistaLuisViña/: 2
 /blog/2025/01/22/PremioNobel2023/: 2
 /blog/2025/07/17/Entrevista_Anne/: 7
-/blog/2025/07/19/FRIKI1-Nubes-Kelvin/: 9
+/blog/2025/07/19/FRIKI1-Nubes-Kelvin/: 10
 /blog/2025/07/20/Amor-I/: 8
 /blog/2025/08/07/ENEF25Bilbao/: 2
 /blog/2025/08/16/FRIKI3-UnaPuestasdeSolenlaCaleta/: 7
@@ -43,7 +43,7 @@
 /blog/2026/06/07/La_Sincronia_hizo_el_resto/: 16
 /blog/2026/06/12/Irreversible/: 4
 /blog/2026/06/17/Belen_YMLM/: 15
-/blog/2026/07/06/Lo_que_aprendi_de_mi_abu/: 17
+/blog/2026/07/06/Lo_que_aprendi_de_mi_abu/: 18
 /blog/2026/07/10/Por_que_los_barcos_flotan/: 9
 /blog/2026/07/12/Alineacion_para_una_noche_rara/: 2
 /blog/2026/07/14/El_Demonio_de_Maxwell_1/: 32
@@ -51,12 +51,12 @@
 /blog/2026/07/22/El_Cielo_y_yo/: 9
 /blog/2026/07/23/VIDA/: 71
 /blog/2026/11/14/PLANCKS26_Rafa_Irene/: 25
-/blog/autores/: 49
+/blog/autores/: 50
 /blog/secciones/concurso-relatos/: 17
 /blog/secciones/diario-de-un-friki/: 24
 /blog/secciones/divulgacion/: 11
 /blog/secciones/entrevistas/: 16
 /blog/secciones/eventos/: 3
-/blog/secciones/gdee-por-el-mundo/: 49
+/blog/secciones/gdee-por-el-mundo/: 51
 /blog/secciones/hall-of-fame/: 16
-/blog/secciones/reflexiones/: 8
+/blog/secciones/reflexiones/: 9
