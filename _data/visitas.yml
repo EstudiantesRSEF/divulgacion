@@ -1,6 +1,6 @@
 # Este archivo se actualiza automáticamente cada noche mediante
 # .github/workflows/actualizar-visitas.yml — no lo edites a mano.
-/blog/: 276
+/blog/: 279
 /blog/2018/10/29/publica-con-nosotros/: 1
 /blog/2020/10/11/memristores/: 14
 /blog/2020/11/01/LauraRodriguezArriaga-1/: 4
@@ -20,7 +20,7 @@
 /blog/2025/07/19/FRIKI1-Nubes-Kelvin/: 10
 /blog/2025/07/20/Amor-I/: 8
 /blog/2025/08/07/ENEF25Bilbao/: 2
-/blog/2025/08/16/FRIKI3-UnaPuestasdeSolenlaCaleta/: 7
+/blog/2025/08/16/FRIKI3-UnaPuestasdeSolenlaCaleta/: 8
 /blog/2025/09/06/FRIKI4-MachineLearning/: 8
 /blog/2025/10/17/EntrevistaEdelsteinI/: 6
 /blog/2025/10/22/EntrevistaEdelsteinII/: 5
@@ -28,7 +28,7 @@
 /blog/2025/11/16/SIPE25_Guitart/: 1
 /blog/2025/11/23/FRIKI5-Interpretaciones/: 6
 /blog/2025/11/26/Entrevista-Anxo-Parte1/: 3
-/blog/2025/11/30/Rafa-NumerosPrimos/: 22
+/blog/2025/11/30/Rafa-NumerosPrimos/: 24
 /blog/2025/12/04/Roberto-BL4S2025/: 8
 /blog/2025/12/08/FRIKI6-Interludio2/: 4
 /blog/2025/12/12/EntrevistaEdelsteinIII/: 2
@@ -50,13 +50,13 @@
 /blog/2026/07/21/El_latido_del_rio/: 20
 /blog/2026/07/22/El_Cielo_y_yo/: 9
 /blog/2026/07/23/VIDA/: 71
-/blog/2026/11/14/PLANCKS26_Rafa_Irene/: 25
+/blog/2026/11/14/PLANCKS26_Rafa_Irene/: 26
 /blog/autores/: 50
 /blog/secciones/concurso-relatos/: 17
-/blog/secciones/diario-de-un-friki/: 24
-/blog/secciones/divulgacion/: 11
+/blog/secciones/diario-de-un-friki/: 25
+/blog/secciones/divulgacion/: 12
 /blog/secciones/entrevistas/: 16
 /blog/secciones/eventos/: 3
-/blog/secciones/gdee-por-el-mundo/: 51
-/blog/secciones/hall-of-fame/: 16
-/blog/secciones/reflexiones/: 9
+/blog/secciones/gdee-por-el-mundo/: 52
+/blog/secciones/hall-of-fame/: 17
+/blog/secciones/reflexiones/: 10
